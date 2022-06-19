@@ -5,7 +5,7 @@ import {logError} from "./utils/log";
 import {ungzip} from "node-gzip";
 import {tryCatchFinallyUtil} from "./utils/error";
 import {fixDecimalPlaces} from "./utils/number";
-import {buySignalStrikeNotification, startServiceNotification} from "./utils/telegram";
+import {buySignalStrikeNotification, sendApeInNotification, startServiceNotification} from "./utils/telegram";
 import {config} from "dotenv";
 
 // Load .env properties
@@ -36,6 +36,12 @@ const hasSupportedQuoteAsset = (tradingPair: string): boolean => {
     }, false)
 }
 
+const APE_IN_SYMBOLS: {
+    [symbol: string]: {
+        percentage: number
+        timeoutId: NodeJS.Timeout
+    }
+} = {}
 const WEBSOCKET_SYMBOL_CONNECTIONS: { [symbol: string]: WebSocket } = {};
 const runIndividualSymbolTickerStream = (symbol: string,
                                          previous ?: {
@@ -61,7 +67,7 @@ const runIndividualSymbolTickerStream = (symbol: string,
 
     const quoteAsset: string = getQuoteAssetName(symbol.toUpperCase())
 
-    const processData = (Data: any) => {
+    const processData = (Data: Record<string, any>) => {
         if (Data.ping) {
             ws.send(JSON.stringify({
                 pong: Data.ping
@@ -102,6 +108,31 @@ const runIndividualSymbolTickerStream = (symbol: string,
                 notificationBuyPrice = notificationBuyPrice + notificationStrikeUnitPrice
             }
         }
+
+        if (Data.tick) {
+            // Ape in service
+            if (APE_IN_SYMBOLS[symbol]) {
+                const apeInParameters = APE_IN_SYMBOLS[symbol]
+                const percentChange: number = Math.round(((Number(Data.tick.lastPrice) - Number(Data.tick.open)) / Number(Data.tick.open)) * 100) / 100
+                if (percentChange < apeInParameters.percentage) {
+                    // Send notification
+                    sendApeInNotification(symbol.toUpperCase(), percentChange)
+
+                    // Set next percentage
+                    apeInParameters.percentage = apeInParameters.percentage + Number(process.env.APE_IN_INCREMENT_PERCENTAGE)
+                    if (apeInParameters.timeoutId) {
+                        clearTimeout(apeInParameters.timeoutId)
+                    }
+                    apeInParameters.timeoutId = setTimeout(() => {
+                        // Reset notification percentage
+                        apeInParameters.percentage = Number(process.env.APE_IN_START_PERCENTAGE)
+
+                        clearTimeout(apeInParameters.timeoutId)
+                        apeInParameters.timeoutId = undefined
+                    }, 1000 * 60 * 60 * Number(process.env.APE_IN_PERCENT_TIMEOUT_HRS))
+                }
+            }
+        }
     }
 
     tryCatchFinallyUtil(
@@ -119,25 +150,6 @@ const runIndividualSymbolTickerStream = (symbol: string,
                     () => {
                         if (isBinary) {
                             ungzip(data).then((value: Buffer) => {
-                                // {
-                                //     "ch":"market.ftmusdt.ticker",
-                                //     "ts":1637636692805,
-                                //     "tick":{
-                                //         "open":2.0022,
-                                //         "high":2.072,
-                                //         "low":1.9264,
-                                //         "close":1.9941,
-                                //         "amount":135779.76309029965,
-                                //         "vol":271819.2759354684,
-                                //         "count":5230,
-                                //         "bid":1.9898,
-                                //         "bidSize":34.9654,
-                                //         "ask":1.9987,
-                                //         "askSize":502.0,
-                                //         "lastPrice":1.9941,
-                                //         "lastSize":4.9225
-                                //     }
-                                // }
                                 const Data = JSON.parse(value.toString());
                                 processData(Data);
                             }).catch((reason) => {
@@ -208,30 +220,6 @@ const initializeSymbols = () => {
                 const symbols = response.data.data;
                 // tslint:disable-next-line:prefer-for-of
                 for (let a = 0; a < symbols.length; a++) {
-                    // {
-                    //     "base-currency": "trx",
-                    //     "quote-currency": "usdt",
-                    //     "price-precision": 6,
-                    //     "amount-precision": 2,
-                    //     "symbol-partition": "main",
-                    //     "symbol": "trxusdt",
-                    //     "state": "online",
-                    //     "value-precision": 8,
-                    //     "min-order-amt": 1,
-                    //     "max-order-amt": 38000000,
-                    //     "min-order-value": 5,
-                    //     "limit-order-min-order-amt": 1,
-                    //     "limit-order-max-order-amt": 38000000,
-                    //     "limit-order-max-buy-amt": 38000000,
-                    //     "limit-order-max-sell-amt": 38000000,
-                    //     "sell-market-min-order-amt": 1,
-                    //     "sell-market-max-order-amt": 3800000,
-                    //     "buy-market-max-order-value": 100000,
-                    //     "leverage-ratio": 5,
-                    //     "super-margin-leverage-ratio": 3,
-                    //     "api-trading": "enabled",
-                    //     "tags": "activities"
-                    // }
                     const symbol = symbols[a];
                     if (hasSupportedQuoteAsset(String(symbol['quote-currency']).toUpperCase())) {
                         if (symbol.state === "online") {
@@ -244,6 +232,13 @@ const initializeSymbols = () => {
                                 delete WEBSOCKET_SYMBOL_CONNECTIONS[symbol.symbol];
                                 ws.close();
                                 ws = undefined;
+                            }
+
+                            if (APE_IN_SYMBOLS[symbol.symbol]) {
+                                if (APE_IN_SYMBOLS[symbol.symbol].timeoutId) {
+                                    clearTimeout(APE_IN_SYMBOLS[symbol.symbol].timeoutId)
+                                }
+                                delete APE_IN_SYMBOLS[symbol.symbol]
                             }
                         }
                     }
@@ -267,6 +262,13 @@ const initializeSymbols = () => {
                                     websocket.close();
                                     websocket = undefined;
                                 }
+
+                                if (APE_IN_SYMBOLS[removeSymbol]) {
+                                    if (APE_IN_SYMBOLS[removeSymbol].timeoutId) {
+                                        clearTimeout(APE_IN_SYMBOLS[removeSymbol].timeoutId)
+                                    }
+                                    delete APE_IN_SYMBOLS[removeSymbol]
+                                }
                             })
                         }
                     }
@@ -286,6 +288,10 @@ const initializeSymbols = () => {
                                 rateLimitTimeout
                             });
                         }, rateLimitTimeout);
+                        APE_IN_SYMBOLS[symbol] = {
+                            percentage: Number(process.env.APE_IN_START_PERCENTAGE),
+                            timeoutId: undefined
+                        }
                     }
                 });
 
