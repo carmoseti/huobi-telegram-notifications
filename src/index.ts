@@ -114,7 +114,9 @@ const runIndividualSymbolTickerStream = (symbol: string,
             if (APE_IN_SYMBOLS[symbol]) {
                 const apeInParameters = APE_IN_SYMBOLS[symbol]
                 const percentChange: number = Math.round(((Number(Data.tick.lastPrice) - Number(Data.tick.high)) / Number(Data.tick.high)) * 10000) / 100
-                if (percentChange < apeInParameters.percentage) {
+                if ((percentChange < apeInParameters.percentage) &&
+                    // Avoid false -100% notifications from new-listings
+                    percentChange !== 100) {
                     // Send notification
                     sendApeInNotification(symbol.toUpperCase(), percentChange)
 
