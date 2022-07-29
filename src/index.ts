@@ -113,7 +113,6 @@ const processData = (Data: Record<string, any>) => {
     if (Data.subbed) {
         const symbol: string = getSymbolFromTopic(Data.subbed as string)
         if (Data.status === "ok") {
-            console.log(JSON.stringify(Data))
             SYMBOLS[symbol].isWebSocketSubscribed = true
         } else {
             // Retry
