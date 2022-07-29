@@ -36,11 +36,12 @@ const hasSupportedQuoteAsset = (tradingPair: string): boolean => {
 }
 
 const getSymbolFromTopic = (topic :string) => {
-    return topic.replace("market.","").replace(".ticker","")
+    return topic.replace(/^(market\.)(\w+)(\.ticker)/,"$2")
 }
 
 let MAIN_WEBSOCKET: WebSocket
 const processData = (Data: Record<string, any>) => {
+    let symbol: string = ''
     tryCatchFinallyUtil(
         () => {
             if (Data.ping) {
@@ -49,7 +50,7 @@ const processData = (Data: Record<string, any>) => {
                 }));
             }
             if (Data.tick) {
-                const symbol: string = getSymbolFromTopic(Data.ch as string)
+                symbol = getSymbolFromTopic(Data.ch as string)
                 const quoteAsset: string = getQuoteAssetName(symbol.toUpperCase())
                 // Notifications
                 const newNotificationBuyPrice: number = SYMBOLS[symbol].notificationStrikeCount === 0 ?
@@ -86,7 +87,7 @@ const processData = (Data: Record<string, any>) => {
                 }
             }
             if (Data.tick) {
-                const symbol: string = getSymbolFromTopic(Data.ch as string)
+                symbol = getSymbolFromTopic(Data.ch as string)
                 // Ape in service
                 if (APE_IN_SYMBOLS[symbol]) {
                     const apeInParameters = APE_IN_SYMBOLS[symbol]
@@ -113,7 +114,7 @@ const processData = (Data: Record<string, any>) => {
                 }
             }
             if (Data.subbed) {
-                const symbol: string = getSymbolFromTopic(Data.subbed as string)
+                symbol = getSymbolFromTopic(Data.subbed as string)
                 if (Data.status === "ok") {
                     SYMBOLS[symbol].isWebSocketSubscribed = true
                 } else {
@@ -125,7 +126,7 @@ const processData = (Data: Record<string, any>) => {
                 }
             }
         },(e)=>{
-            logError(`processData() error : ${e}`)
+            logError(`processData(${symbol}) error : ${e}`)
         })
 }
 const runWebSocket = () => {
