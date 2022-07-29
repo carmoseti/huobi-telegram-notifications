@@ -41,83 +41,92 @@ const getSymbolFromTopic = (topic :string) => {
 
 let MAIN_WEBSOCKET: WebSocket
 const processData = (Data: Record<string, any>) => {
-    if (Data.ping) {
-        MAIN_WEBSOCKET.send(JSON.stringify({
-            pong: Data.ping
-        }));
-    }
-    if (Data.tick) {
-        const symbol: string = getSymbolFromTopic(Data.ch as string)
-        const quoteAsset: string = getQuoteAssetName(symbol.toUpperCase())
-        // Notifications
-        const newNotificationBuyPrice: number = SYMBOLS[symbol].notificationStrikeCount === 0 ?
-            fixDecimalPlaces((1.00 + Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)) * Data.tick.lastPrice, 12) :
-            fixDecimalPlaces(SYMBOLS[symbol].notificationBuyPrice + SYMBOLS[symbol].notificationStrikeUnitPrice, 12);
-
-        if (SYMBOLS[symbol].notificationBuyPrice) {
-            if (newNotificationBuyPrice < SYMBOLS[symbol].notificationBuyPrice) {
-                SYMBOLS[symbol].notificationBuyPrice = newNotificationBuyPrice;
+    tryCatchFinallyUtil(
+        () => {
+            if (Data.ping) {
+                MAIN_WEBSOCKET.send(JSON.stringify({
+                    pong: Data.ping
+                }));
             }
-        } else {
-            SYMBOLS[symbol].notificationBuyPrice = newNotificationBuyPrice;
-        }
-        if (Data.tick.lastPrice >= SYMBOLS[symbol].notificationBuyPrice && SYMBOLS[symbol].notificationBuyPrice !== 0) {
-            SYMBOLS[symbol].notificationStrikeCount += 1;
-            if (SYMBOLS[symbol].notificationStrikeCount === 1) {
-                SYMBOLS[symbol].notificationStrikeUnitPrice = fixDecimalPlaces((SYMBOLS[symbol].notificationBuyPrice * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)) / (1.00 + Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)), 12);
-            }
+            if (Data.tick) {
+                const symbol: string = getSymbolFromTopic(Data.ch as string)
+                const quoteAsset: string = getQuoteAssetName(symbol.toUpperCase())
+                // Notifications
+                const newNotificationBuyPrice: number = SYMBOLS[symbol].notificationStrikeCount === 0 ?
+                    fixDecimalPlaces((1.00 + Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)) * Data.tick.lastPrice, 12) :
+                    fixDecimalPlaces(SYMBOLS[symbol].notificationBuyPrice + SYMBOLS[symbol].notificationStrikeUnitPrice, 12);
 
-            if (SYMBOLS[symbol].notificationStrikeCount > 1) buySignalStrikeNotification(symbol.toUpperCase(), Number(Data.tick.lastPrice), SYMBOLS[symbol].notificationStrikeCount, Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT), quoteAsset);
-
-            if (SYMBOLS[symbol].notificationStrikeTimeoutId) clearTimeout(SYMBOLS[symbol].notificationStrikeTimeoutId);
-            SYMBOLS[symbol].notificationStrikeTimeoutId = setTimeout(
-                () => {
-                    SYMBOLS[symbol].notificationStrikeCount = 0;
-                    SYMBOLS[symbol].notificationBuyPrice = 0;
-                    SYMBOLS[symbol].notificationStrikeUnitPrice = 0;
-
-                    clearTimeout(SYMBOLS[symbol].notificationStrikeTimeoutId);
-                    SYMBOLS[symbol].notificationStrikeTimeoutId = undefined;
-                }, 1000 * 60 * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_TIMEOUT_MINS) * SYMBOLS[symbol].notificationStrikeCount
-            ) as NodeJS.Timeout;
-            SYMBOLS[symbol].notificationBuyPrice = SYMBOLS[symbol].notificationBuyPrice + SYMBOLS[symbol].notificationStrikeUnitPrice
-        }
-    }
-    if (Data.tick) {
-        const symbol: string = getSymbolFromTopic(Data.ch as string)
-        // Ape in service
-        if (APE_IN_SYMBOLS[symbol]) {
-            const apeInParameters = APE_IN_SYMBOLS[symbol]
-            const percentChange: number = Math.round(((Number(Data.tick.lastPrice) - Number(Data.tick.high)) / Number(Data.tick.high)) * 10000) / 100
-            if ((percentChange < apeInParameters.percentage) &&
-                // Avoid false -100% notifications from new-listings
-                percentChange !== 100) {
-                // Send notification
-                sendApeInNotification(symbol.toUpperCase(), percentChange)
-
-                // Set next percentage
-                apeInParameters.percentage = apeInParameters.percentage + Number(process.env.APE_IN_INCREMENT_PERCENTAGE)
-                if (apeInParameters.timeoutId) {
-                    clearTimeout(apeInParameters.timeoutId)
+                if (SYMBOLS[symbol].notificationBuyPrice) {
+                    if (newNotificationBuyPrice < SYMBOLS[symbol].notificationBuyPrice) {
+                        SYMBOLS[symbol].notificationBuyPrice = newNotificationBuyPrice;
+                    }
+                } else {
+                    SYMBOLS[symbol].notificationBuyPrice = newNotificationBuyPrice;
                 }
-                apeInParameters.timeoutId = setTimeout(() => {
-                    // Reset notification percentage
-                    apeInParameters.percentage = Number(process.env.APE_IN_START_PERCENTAGE)
+                if (Data.tick.lastPrice >= SYMBOLS[symbol].notificationBuyPrice && SYMBOLS[symbol].notificationBuyPrice !== 0) {
+                    SYMBOLS[symbol].notificationStrikeCount += 1;
+                    if (SYMBOLS[symbol].notificationStrikeCount === 1) {
+                        SYMBOLS[symbol].notificationStrikeUnitPrice = fixDecimalPlaces((SYMBOLS[symbol].notificationBuyPrice * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)) / (1.00 + Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)), 12);
+                    }
 
-                    clearTimeout(apeInParameters.timeoutId)
-                    apeInParameters.timeoutId = undefined
-                }, 1000 * 60 * 60 * Number(process.env.APE_IN_PERCENT_TIMEOUT_HRS))
+                    if (SYMBOLS[symbol].notificationStrikeCount > 1) buySignalStrikeNotification(symbol.toUpperCase(), Number(Data.tick.lastPrice), SYMBOLS[symbol].notificationStrikeCount, Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT), quoteAsset);
+
+                    if (SYMBOLS[symbol].notificationStrikeTimeoutId) clearTimeout(SYMBOLS[symbol].notificationStrikeTimeoutId);
+                    SYMBOLS[symbol].notificationStrikeTimeoutId = setTimeout(
+                        () => {
+                            SYMBOLS[symbol].notificationStrikeCount = 0;
+                            SYMBOLS[symbol].notificationBuyPrice = 0;
+                            SYMBOLS[symbol].notificationStrikeUnitPrice = 0;
+
+                            clearTimeout(SYMBOLS[symbol].notificationStrikeTimeoutId);
+                            SYMBOLS[symbol].notificationStrikeTimeoutId = undefined;
+                        }, 1000 * 60 * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_TIMEOUT_MINS) * SYMBOLS[symbol].notificationStrikeCount
+                    ) as NodeJS.Timeout;
+                    SYMBOLS[symbol].notificationBuyPrice = SYMBOLS[symbol].notificationBuyPrice + SYMBOLS[symbol].notificationStrikeUnitPrice
+                }
             }
-        }
-    }
-    if (Data.subbed) {
-        const symbol: string = getSymbolFromTopic(Data.subbed as string)
-        if (Data.status === "ok") {
-            SYMBOLS[symbol].isWebSocketSubscribed = true
-        } else {
-            // Retry
-        }
-    }
+            if (Data.tick) {
+                const symbol: string = getSymbolFromTopic(Data.ch as string)
+                // Ape in service
+                if (APE_IN_SYMBOLS[symbol]) {
+                    const apeInParameters = APE_IN_SYMBOLS[symbol]
+                    const percentChange: number = Math.round(((Number(Data.tick.lastPrice) - Number(Data.tick.high)) / Number(Data.tick.high)) * 10000) / 100
+                    if ((percentChange < apeInParameters.percentage) &&
+                        // Avoid false -100% notifications from new-listings
+                        percentChange !== 100) {
+                        // Send notification
+                        sendApeInNotification(symbol.toUpperCase(), percentChange)
+
+                        // Set next percentage
+                        apeInParameters.percentage = apeInParameters.percentage + Number(process.env.APE_IN_INCREMENT_PERCENTAGE)
+                        if (apeInParameters.timeoutId) {
+                            clearTimeout(apeInParameters.timeoutId)
+                        }
+                        apeInParameters.timeoutId = setTimeout(() => {
+                            // Reset notification percentage
+                            apeInParameters.percentage = Number(process.env.APE_IN_START_PERCENTAGE)
+
+                            clearTimeout(apeInParameters.timeoutId)
+                            apeInParameters.timeoutId = undefined
+                        }, 1000 * 60 * 60 * Number(process.env.APE_IN_PERCENT_TIMEOUT_HRS))
+                    }
+                }
+            }
+            if (Data.subbed) {
+                const symbol: string = getSymbolFromTopic(Data.subbed as string)
+                if (Data.status === "ok") {
+                    SYMBOLS[symbol].isWebSocketSubscribed = true
+                } else {
+                    // retry to subscribe
+                    MAIN_WEBSOCKET.send(JSON.stringify({
+                        sub: `market.${symbol}.ticker`,
+                        id: String(new Date().getTime()),
+                    }))
+                }
+            }
+        },(e)=>{
+            logError(`processData() error : ${e}`)
+        })
 }
 const runWebSocket = () => {
     MAIN_WEBSOCKET = new WebSocket(process.env.HUOBI_WEBSOCKET_URL)
