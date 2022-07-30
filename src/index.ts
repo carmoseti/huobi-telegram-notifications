@@ -12,19 +12,8 @@ config();
 
 const SUPPORTED_QUOTE_ASSETS: string[] = String(process.env.HUOBI_QUOTE_ASSETS).split(",");
 const getBaseAssetName = (tradingPair: string) => {
-    let baseAssetName: string = tradingPair;
-
-    // tslint:disable-next-line:prefer-for-of
-    for (let i = 0; i < SUPPORTED_QUOTE_ASSETS.length; i++) {
-        if (tradingPair.startsWith(SUPPORTED_QUOTE_ASSETS[i])) {
-            return SUPPORTED_QUOTE_ASSETS[i];
-        }
-    }
-
-    SUPPORTED_QUOTE_ASSETS.forEach((quoteAsset: string) => {
-        baseAssetName = baseAssetName.replace(quoteAsset, '')
-    });
-    return baseAssetName;
+    const regExp: RegExp = new RegExp(`^(\\w+)(` + SUPPORTED_QUOTE_ASSETS.join('|') + `)$`)
+    return tradingPair.replace(regExp, '$1');
 }
 const getQuoteAssetName = (tradingPair: string) => {
     return tradingPair.replace(getBaseAssetName(tradingPair), '')
@@ -35,8 +24,8 @@ const hasSupportedQuoteAsset = (tradingPair: string): boolean => {
     }, false)
 }
 
-const getSymbolFromTopic = (topic :string) => {
-    return topic.replace(/^(market\.)(\w+)(\.ticker)/,"$2")
+const getSymbolFromTopic = (topic: string) => {
+    return topic.replace(/^(market\.)(\w+)(\.ticker)/, "$2")
 }
 
 let MAIN_WEBSOCKET: WebSocket
@@ -125,7 +114,7 @@ const processData = (Data: Record<string, any>) => {
                     }))
                 }
             }
-        },(e)=>{
+        }, (e) => {
             logError(`processData(${symbol}) error : ${e}`)
         })
 }
