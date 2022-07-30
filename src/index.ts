@@ -1,19 +1,19 @@
-import axios from "axios";
-import {logError} from "./utils/log";
-import {config} from "dotenv";
-import {buySignalStrikeNotification, sendApeInNotification, startServiceNotification} from "./utils/telegram";
-import WebSocket from "ws";
-import {tryCatchFinallyUtil} from "./utils/error";
-import {ungzip} from "node-gzip";
-import {fixDecimalPlaces} from "./utils/number";
+import axios from "axios"
+import {logError} from "./utils/log"
+import {config} from "dotenv"
+import {buySignalStrikeNotification, sendApeInNotification, startServiceNotification} from "./utils/telegram"
+import WebSocket from "ws"
+import {tryCatchFinallyUtil} from "./utils/error"
+import {ungzip} from "node-gzip"
+import {fixDecimalPlaces} from "./utils/number"
 
 // Load .env properties
-config();
+config()
 
-const SUPPORTED_QUOTE_ASSETS: string[] = String(process.env.HUOBI_QUOTE_ASSETS).split(",");
+const SUPPORTED_QUOTE_ASSETS: string[] = String(process.env.HUOBI_QUOTE_ASSETS).split(",")
 const getBaseAssetName = (tradingPair: string) => {
     const regExp: RegExp = new RegExp(`^(\\w+)(` + SUPPORTED_QUOTE_ASSETS.join('|') + `)$`)
-    return tradingPair.replace(regExp, '$1');
+    return tradingPair.replace(regExp, '$1')
 }
 const getQuoteAssetName = (tradingPair: string) => {
     return tradingPair.replace(getBaseAssetName(tradingPair), '')
@@ -36,7 +36,7 @@ const processData = (Data: Record<string, any>) => {
             if (Data.ping) {
                 MAIN_WEBSOCKET.send(JSON.stringify({
                     pong: Data.ping
-                }));
+                }))
             }
             if (Data.tick) {
                 symbol = getSymbolFromTopic(Data.ch as string)
@@ -44,34 +44,34 @@ const processData = (Data: Record<string, any>) => {
                 // Notifications
                 const newNotificationBuyPrice: number = SYMBOLS[symbol].notificationStrikeCount === 0 ?
                     fixDecimalPlaces((1.00 + Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)) * Data.tick.lastPrice, 12) :
-                    fixDecimalPlaces(SYMBOLS[symbol].notificationBuyPrice + SYMBOLS[symbol].notificationStrikeUnitPrice, 12);
+                    fixDecimalPlaces(SYMBOLS[symbol].notificationBuyPrice + SYMBOLS[symbol].notificationStrikeUnitPrice, 12)
 
                 if (SYMBOLS[symbol].notificationBuyPrice) {
                     if (newNotificationBuyPrice < SYMBOLS[symbol].notificationBuyPrice) {
-                        SYMBOLS[symbol].notificationBuyPrice = newNotificationBuyPrice;
+                        SYMBOLS[symbol].notificationBuyPrice = newNotificationBuyPrice
                     }
                 } else {
-                    SYMBOLS[symbol].notificationBuyPrice = newNotificationBuyPrice;
+                    SYMBOLS[symbol].notificationBuyPrice = newNotificationBuyPrice
                 }
                 if (Data.tick.lastPrice >= SYMBOLS[symbol].notificationBuyPrice && SYMBOLS[symbol].notificationBuyPrice !== 0) {
-                    SYMBOLS[symbol].notificationStrikeCount += 1;
+                    SYMBOLS[symbol].notificationStrikeCount += 1
                     if (SYMBOLS[symbol].notificationStrikeCount === 1) {
-                        SYMBOLS[symbol].notificationStrikeUnitPrice = fixDecimalPlaces((SYMBOLS[symbol].notificationBuyPrice * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)) / (1.00 + Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)), 12);
+                        SYMBOLS[symbol].notificationStrikeUnitPrice = fixDecimalPlaces((SYMBOLS[symbol].notificationBuyPrice * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)) / (1.00 + Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)), 12)
                     }
 
-                    if (SYMBOLS[symbol].notificationStrikeCount > 1) buySignalStrikeNotification(symbol.toUpperCase(), Number(Data.tick.lastPrice), SYMBOLS[symbol].notificationStrikeCount, Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT), quoteAsset);
+                    if (SYMBOLS[symbol].notificationStrikeCount > 1) buySignalStrikeNotification(symbol.toUpperCase(), Number(Data.tick.lastPrice), SYMBOLS[symbol].notificationStrikeCount, Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT), quoteAsset)
 
-                    if (SYMBOLS[symbol].notificationStrikeTimeoutId) clearTimeout(SYMBOLS[symbol].notificationStrikeTimeoutId);
+                    if (SYMBOLS[symbol].notificationStrikeTimeoutId) clearTimeout(SYMBOLS[symbol].notificationStrikeTimeoutId)
                     SYMBOLS[symbol].notificationStrikeTimeoutId = setTimeout(
                         () => {
-                            SYMBOLS[symbol].notificationStrikeCount = 0;
-                            SYMBOLS[symbol].notificationBuyPrice = 0;
-                            SYMBOLS[symbol].notificationStrikeUnitPrice = 0;
+                            SYMBOLS[symbol].notificationStrikeCount = 0
+                            SYMBOLS[symbol].notificationBuyPrice = 0
+                            SYMBOLS[symbol].notificationStrikeUnitPrice = 0
 
-                            clearTimeout(SYMBOLS[symbol].notificationStrikeTimeoutId);
-                            SYMBOLS[symbol].notificationStrikeTimeoutId = undefined;
+                            clearTimeout(SYMBOLS[symbol].notificationStrikeTimeoutId)
+                            SYMBOLS[symbol].notificationStrikeTimeoutId = undefined
                         }, 1000 * 60 * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_TIMEOUT_MINS) * SYMBOLS[symbol].notificationStrikeCount
-                    ) as NodeJS.Timeout;
+                    ) as NodeJS.Timeout
                     SYMBOLS[symbol].notificationBuyPrice = SYMBOLS[symbol].notificationBuyPrice + SYMBOLS[symbol].notificationStrikeUnitPrice
                 }
             }
@@ -143,36 +143,36 @@ const runWebSocket = () => {
                     () => {
                         if (isBinary) {
                             ungzip(data).then((value: Buffer) => {
-                                const Data = JSON.parse(value.toString());
-                                processData(Data);
+                                const Data = JSON.parse(value.toString())
+                                processData(Data)
                             }).catch((reason) => {
                                 logError(`websocket ungzip error () : ${reason}`)
-                            });
+                            })
                         } else {
-                            const Data = JSON.parse(data.toString());
-                            processData(Data);
+                            const Data = JSON.parse(data.toString())
+                            processData(Data)
                         }
                     },
                     (error) => {
-                        MAIN_WEBSOCKET.terminate();
+                        MAIN_WEBSOCKET.terminate()
                         logError(`webSocket onMessage error (): ${error}`)
                     }
-                );
-            });
+                )
+            })
 
             MAIN_WEBSOCKET.on('close', ((code, reason) => {
                 MAIN_WEBSOCKET = undefined
                 logError(`runWebSocket() close : ${code} => ${reason}`)
                 runWebSocket()
-            }));
+            }))
 
             MAIN_WEBSOCKET.on("error", (error) => {
-                MAIN_WEBSOCKET.terminate();
+                MAIN_WEBSOCKET.terminate()
                 logError(`runWebSocket() error : ${error}`)
-            });
+            })
         }, (e) => {
-            MAIN_WEBSOCKET.terminate();
-            logError(`runWebSocket() error : ${e}`);
+            MAIN_WEBSOCKET.terminate()
+            logError(`runWebSocket() error : ${e}`)
         })
 }
 
@@ -190,14 +190,14 @@ const SYMBOLS: {
         notificationStrikeTimeoutId: NodeJS.Timeout
         notificationStrikeUnitPrice: number
     }
-} = {};
+} = {}
 const initializeSymbols = () => {
     axios.get(`${process.env.HUOBI_REST_API_URL}/v1/common/symbols`)
         .then((response) => {
-            const symbols = response.data.data;
+            const symbols = response.data.data
             // tslint:disable-next-line:prefer-for-of
             for (let a = 0; a < symbols.length; a++) {
-                const symbol = symbols[a];
+                const symbol = symbols[a]
                 if (hasSupportedQuoteAsset(String(symbol['quote-currency']).toUpperCase())) {
                     if (symbol.state === "online") {
                         if (!SYMBOLS[symbol.symbol]) {
@@ -237,7 +237,7 @@ const initializeSymbols = () => {
 
             // tslint:disable-next-line:prefer-for-of
             for (let a = 0; a < symbolKeys.length; a++) {
-                const baseAssetName: string = getBaseAssetName(symbolKeys[a].toUpperCase());
+                const baseAssetName: string = getBaseAssetName(symbolKeys[a].toUpperCase())
                 for (let i = 0; i < SUPPORTED_QUOTE_ASSETS.length; i++) {
                     const tradingPair: string = `${baseAssetName}${SUPPORTED_QUOTE_ASSETS[i]}`.toLowerCase()
                     if (SYMBOLS.hasOwnProperty(tradingPair)) {
@@ -266,7 +266,7 @@ const initializeSymbols = () => {
                         })
                     }
                 }
-                symbolKeys = Object.keys(SYMBOLS);
+                symbolKeys = Object.keys(SYMBOLS)
             }
 
             if (!MAIN_WEBSOCKET) {
@@ -294,9 +294,9 @@ const initializeSymbols = () => {
 }
 
 // Program
-startServiceNotification();
+startServiceNotification()
 
 initializeSymbols()
 setInterval(() => {
-    initializeSymbols();
-}, 1000 * 60 * Number(process.env.HUOBI_SYMBOL_UPDATE_INTERVAL_MINS)); // Check symbols status every x=10 mins
+    initializeSymbols()
+}, 1000 * 60 * Number(process.env.HUOBI_SYMBOL_UPDATE_INTERVAL_MINS)) // Check symbols status every x=10 mins
