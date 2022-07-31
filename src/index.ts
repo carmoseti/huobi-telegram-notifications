@@ -119,10 +119,10 @@ const processData = (Data: Record<string, any>) => {
         })
 }
 const runWebSocket = () => {
-    MAIN_WEBSOCKET = new WebSocket(process.env.HUOBI_WEBSOCKET_URL)
-
     tryCatchFinallyUtil(
         () => {
+            MAIN_WEBSOCKET = new WebSocket(process.env.HUOBI_WEBSOCKET_URL)
+
             MAIN_WEBSOCKET.on("open", () => {
                 Object.entries(SYMBOLS).forEach(([key, symbol]) => {
                     if (!symbol.isWebSocketSubscribed) {
@@ -162,17 +162,17 @@ const runWebSocket = () => {
 
             MAIN_WEBSOCKET.on('close', ((code, reason) => {
                 MAIN_WEBSOCKET = undefined
-                logError(`runWebSocket() close : ${code} => ${reason}`)
+                logError(`runWebSocket() onClose : ${code} => ${reason}`)
                 runWebSocket()
             }))
 
             MAIN_WEBSOCKET.on("error", (error) => {
                 MAIN_WEBSOCKET.terminate()
-                logError(`runWebSocket() error : ${error}`)
+                logError(`runWebSocket() onError : ${error}`)
             })
         }, (e) => {
             MAIN_WEBSOCKET.terminate()
-            logError(`runWebSocket() error : ${e}`)
+            logError(`runWebSocket() catch error : ${e}`)
         })
 }
 
@@ -287,9 +287,9 @@ const initializeSymbols = () => {
                 })
             }
         }, (reason) => {
-            logError(`initializeSymbols() error: ${reason}`)
+            logError(`initializeSymbols() onError: ${reason}`)
         }).catch((reason) => {
-        logError(`initializeSymbols() error: ${reason}`)
+        logError(`initializeSymbols() catch error: ${reason}`)
     })
 }
 
