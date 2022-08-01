@@ -29,14 +29,27 @@ const getSymbolFromTopic = (topic: string) => {
 }
 
 let MAIN_WEBSOCKET: WebSocket
+let PING_TIMEOUT_ID: NodeJS.Timeout
+const clearPingTimeoutId = () => {
+    if (PING_TIMEOUT_ID) {
+        clearTimeout(PING_TIMEOUT_ID)
+        PING_TIMEOUT_ID = undefined
+    }
+}
 const processData = (Data: Record<string, any>) => {
     let symbol: string = ''
     tryCatchFinallyUtil(
         () => {
             if (Data.ping) {
+                clearPingTimeoutId()
+
                 MAIN_WEBSOCKET.send(JSON.stringify({
                     pong: Data.ping
                 }))
+
+                PING_TIMEOUT_ID = setTimeout(() => {
+                    MAIN_WEBSOCKET.terminate()
+                }, Number(process.env.HUOBI_WEBSOCKET_PING_TIMEOUT_SECONDS) * 1000) as NodeJS.Timeout
             }
             if (Data.tick) {
                 symbol = getSymbolFromTopic(Data.ch as string)
@@ -161,8 +174,11 @@ const runWebSocket = () => {
             })
 
             MAIN_WEBSOCKET.on('close', ((code, reason) => {
-                MAIN_WEBSOCKET = undefined
                 logError(`runWebSocket() onClose : ${code} => ${reason}`)
+
+                MAIN_WEBSOCKET = undefined
+                clearPingTimeoutId()
+
                 runWebSocket()
             }))
 
