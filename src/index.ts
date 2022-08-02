@@ -184,10 +184,7 @@ const runWebSocket = () => {
 
                 // Reset subscriptions
                 Object.entries(SYMBOLS).forEach(([key, value]) => {
-                    SYMBOLS[key] = {
-                        ...value,
-                        isWebSocketSubscribed: false
-                    }
+                    SYMBOLS[key].isWebSocketSubscribed = false
                 })
 
                 runWebSocket()
