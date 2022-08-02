@@ -143,9 +143,12 @@ const runWebSocket = () => {
                             sub: `market.${key}.ticker`,
                             id: String(new Date().getTime()),
                         }))
-                        APE_IN_SYMBOLS[key] = {
-                            percentage: Number(process.env.APE_IN_START_PERCENTAGE),
-                            timeoutId: undefined
+
+                        if (!APE_IN_SYMBOLS[key]) {
+                            APE_IN_SYMBOLS[key] = {
+                                percentage: Number(process.env.APE_IN_START_PERCENTAGE),
+                                timeoutId: undefined
+                            }
                         }
                     }
                 })
@@ -178,6 +181,14 @@ const runWebSocket = () => {
 
                 MAIN_WEBSOCKET = undefined
                 clearPingTimeoutId()
+
+                // Reset subscriptions
+                Object.entries(SYMBOLS).forEach(([key, value]) => {
+                    SYMBOLS[key] = {
+                        ...value,
+                        isWebSocketSubscribed: false
+                    }
+                })
 
                 runWebSocket()
             }))
