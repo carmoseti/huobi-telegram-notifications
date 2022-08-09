@@ -12,12 +12,12 @@ export const startServiceNotification = () => {
     })
 }
 
-export const buySignalStrikeNotification = (symbol :string, price :number, strikeCount :number, strikeUnitPCT :number, quoteAsset :string) => {
-    const printPrice = price.toLocaleString(['en-UK','en-US'],{
+export const buySignalStrikeNotification = (symbol: string, price: number, strikeCount: number, strikeUnitPCT: number, quoteAsset: string) => {
+    const printPrice = price.toLocaleString(['en-UK', 'en-US'], {
         maximumFractionDigits: 20,
     })
 
-    const printStrikePCT :number = Math.floor(strikeUnitPCT * strikeCount * 100)
+    const printStrikePCT: number = Math.floor(strikeUnitPCT * strikeCount * 100)
 
     axios.post(`${process.env.TELEGRAM_API_URL}/${process.env.TELEGRAM_BOT_TOKEN_SECRET}/sendMessage`, {
         chat_id: process.env.TELEGRAM_BOT_CHAT_ID,
@@ -30,7 +30,7 @@ export const buySignalStrikeNotification = (symbol :string, price :number, strik
     })
 }
 
-export const sendApeInNotification = (symbol :string, percentageChange :number) => {
+export const sendApeInNotification = (symbol: string, percentageChange: number) => {
     axios.post(`${process.env.TELEGRAM_API_URL}/${process.env.TELEGRAM_APE_IN_BOT_TOKEN_SECRET}/sendMessage`, {
         chat_id: process.env.TELEGRAM_BOT_CHAT_ID,
         text: `&#128161; HUOBI\n\nHello ${process.env.USER_NAME}\nCheckout <b>${symbol}</b> currently with percentage change: <b>${percentageChange}%</b> in the last 24hrs`,
