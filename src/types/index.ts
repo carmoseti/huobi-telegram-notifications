@@ -51,12 +51,12 @@ export type HuobiWebSocketResponse = {
         lastSize :number
     }
 }
-export type HuobiTelegramNotificationsSymbols = {
+export type HuobiTelegramSymbols = {
     [baseCurrency: string]: {
         [quoteCurrency: string]: HuobiSymbolsResponse["data"][0]
     }
 }
-export type HuobiTelegramNotificationsTradingPairs = {
+export type HuobiTelegramTradingPairs = {
     [baseCurrency: string]: {
         symbol: string
         baseCurrency: string

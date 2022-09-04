@@ -15,13 +15,15 @@ export const startServiceNotification = () => {
             }
         }).catch((e) => {
             logError(`Telegram.startServiceNotification.axios() : ${e}`)
-            sleep(1000)
-            startServiceNotification()
+            sleep(1000).then(() => {
+                startServiceNotification()
+            })
         })
     }, (e)=>{
         logError(`Telegram.startServiceNotification() : ${e}`)
-        sleep(1000)
-        startServiceNotification()
+        sleep(1000).then(() => {
+            startServiceNotification()
+        })
     })
 }
 
@@ -43,13 +45,15 @@ export const buySignalStrikeNotification = (symbol: string, price: number, strik
             }
         }).catch((e) => {
             logError(`Telegram.buySignalStrikeNotification.axios() : ${e}`)
-            sleep(1000)
-            buySignalStrikeNotification(symbol, price, strikeCount, strikeUnitPCT, quoteAsset)
+            sleep(1000).then(() => {
+                buySignalStrikeNotification(symbol, price, strikeCount, strikeUnitPCT, quoteAsset)
+            })
         })
     }, (e)=>{
         logError(`Telegram.buySignalStrikeNotification() : ${e}`)
-        sleep(1000)
-        buySignalStrikeNotification(symbol, price, strikeCount, strikeUnitPCT, quoteAsset)
+        sleep(1000).then(() => {
+            buySignalStrikeNotification(symbol, price, strikeCount, strikeUnitPCT, quoteAsset)
+        })
     })
 }
 
@@ -65,12 +69,14 @@ export const sendApeInNotification = (symbol: string, percentageChange: number) 
             }
         }).catch((e) => {
             logError(`Telegram.sendApeInNotification.axios() : ${e}`)
-            sleep(1000)
-            sendApeInNotification(symbol, percentageChange)
+            sleep(1000).then(() => {
+                sendApeInNotification(symbol, percentageChange)
+            })
         })
     }, (e) => {
         logError(`Telegram.sendApeInNotification() : ${e}`)
-        sleep(1000)
-        sendApeInNotification(symbol, percentageChange)
+        sleep(1000).then(() => {
+            sendApeInNotification(symbol, percentageChange)
+        })
     })
 }

@@ -2,7 +2,7 @@ import {tryCatchFinallyUtil} from "./utils/error"
 import {logError} from "./utils/log"
 import axios, {AxiosResponse} from "axios"
 import {config} from "dotenv"
-import {HuobiSymbolsResponse, HuobiWebSocketResponse, HuobiTelegramNotificationsSymbols, HuobiTelegramNotificationsTradingPairs} from "index"
+import {HuobiSymbolsResponse, HuobiWebSocketResponse, HuobiTelegramSymbols, HuobiTelegramTradingPairs} from "index"
 import WebSocket from "ws"
 import {ungzip} from "node-gzip"
 import {buySignalStrikeNotification, sendApeInNotification, startServiceNotification,} from "./utils/telegram"
@@ -11,16 +11,16 @@ import {fixDecimalPlaces} from "./utils/number"
 config()
 
 // Global Variables
-let HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS: HuobiTelegramNotificationsSymbols = {}
-let HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS: HuobiTelegramNotificationsTradingPairs = {}
+let HUOBI_TELEGRAM_SYMBOLS: HuobiTelegramSymbols = {}
+let HUOBI_TELEGRAM_TRADING_PAIRS: HuobiTelegramTradingPairs = {}
 let HUOBI_MAIN_WEBSOCKET: WebSocket
 let HUOBI_PING_TIMEOUT_ID: NodeJS.Timeout
 let HUOBI_GET_SYMBOLS_INTERVAL_ID: NodeJS.Timeout
 
 const resetRun = () => {
     HUOBI_MAIN_WEBSOCKET = undefined
-    HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS = {}
-    HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS = {}
+    HUOBI_TELEGRAM_SYMBOLS = {}
+    HUOBI_TELEGRAM_TRADING_PAIRS = {}
 
     clearPingTimeoutId()
 
@@ -45,15 +45,15 @@ const getSymbols = () => {
                     getSymbols()
                 } else {
                     // Initial at startup
-                    if (Object.entries(HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS).length === 0) {
+                    if (Object.entries(HUOBI_TELEGRAM_SYMBOLS).length === 0) {
                         response.data.data.forEach((symbol) => {
-                            if (HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS[symbol["base-currency"]]) {
-                                HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS[symbol["base-currency"]] = {
-                                    ...HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS[symbol["base-currency"]],
+                            if (HUOBI_TELEGRAM_SYMBOLS[symbol["base-currency"]]) {
+                                HUOBI_TELEGRAM_SYMBOLS[symbol["base-currency"]] = {
+                                    ...HUOBI_TELEGRAM_SYMBOLS[symbol["base-currency"]],
                                     [symbol["quote-currency"]]: symbol
                                 }
                             } else {
-                                HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS[symbol["base-currency"]] = {
+                                HUOBI_TELEGRAM_SYMBOLS[symbol["base-currency"]] = {
                                     [symbol["quote-currency"]]: symbol
                                 }
                             }
@@ -62,12 +62,12 @@ const getSymbols = () => {
                     }
                     // Subsequent (Post-startup)
                     else {
-                        const newHuobiSymbols: HuobiTelegramNotificationsSymbols = {}
+                        const newHuobiSymbols: HuobiTelegramSymbols = {}
 
                         for (let a = 0; a < response.data.data.length; a++) {
                             const tradePair = response.data.data[a]
                             const baseCurrency = tradePair["base-currency"]
-                            if (!HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS[baseCurrency]) {
+                            if (!HUOBI_TELEGRAM_SYMBOLS[baseCurrency]) {
                                 // New
                                 if (newHuobiSymbols[baseCurrency]) {
                                     newHuobiSymbols[baseCurrency] = {
@@ -82,8 +82,8 @@ const getSymbols = () => {
                             }
                         }
 
-                        const deleteHuobiSymbols: HuobiTelegramNotificationsSymbols = {}
-                        const apiHuobiSymbols: HuobiTelegramNotificationsSymbols = {}
+                        const deleteHuobiSymbols: HuobiTelegramSymbols = {}
+                        const apiHuobiSymbols: HuobiTelegramSymbols = {}
 
                         for (let a = 0; a < response.data.data.length; a++) {
                             const tradePair = response.data.data[a]
@@ -99,18 +99,18 @@ const getSymbols = () => {
                                 }
                             }
                         }
-                        const rgTraderHuobiSymbolsEntries: [string, HuobiTelegramNotificationsSymbols[""]][] = Object.entries(HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS)
+                        const rgTraderHuobiSymbolsEntries: [string, HuobiTelegramSymbols[""]][] = Object.entries(HUOBI_TELEGRAM_SYMBOLS)
 
                         for (let a = 0; a < rgTraderHuobiSymbolsEntries.length; a++) {
                             const [baseCurrency, tradePair] = rgTraderHuobiSymbolsEntries[a]
                             if (!apiHuobiSymbols[baseCurrency]) {
                                 deleteHuobiSymbols[baseCurrency] = tradePair
                             } else {
-                                if (HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency]) {
-                                    if (!apiHuobiSymbols[baseCurrency][HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].quoteCurrency]) {
+                                if (HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency]) {
+                                    if (!apiHuobiSymbols[baseCurrency][HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].quoteCurrency]) {
                                         deleteHuobiSymbols[baseCurrency] = tradePair
                                     } else {
-                                        if (apiHuobiSymbols[baseCurrency][HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].quoteCurrency].state !== "online") {
+                                        if (apiHuobiSymbols[baseCurrency][HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].quoteCurrency].state !== "online") {
                                             deleteHuobiSymbols[baseCurrency] = tradePair
                                         }
                                     }
@@ -118,7 +118,7 @@ const getSymbols = () => {
                             }
                         }
 
-                        HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS = {...apiHuobiSymbols}
+                        HUOBI_TELEGRAM_SYMBOLS = {...apiHuobiSymbols}
 
                         processTradingPairs(newHuobiSymbols, deleteHuobiSymbols)
                     }
@@ -133,18 +133,18 @@ const getSymbols = () => {
     })
 }
 
-const processTradingPairs = (newSubscribeSymbols ?: HuobiTelegramNotificationsSymbols, unsubscribeSymbols ?: HuobiTelegramNotificationsSymbols) => {
+const processTradingPairs = (newSubscribeSymbols ?: HuobiTelegramSymbols, unsubscribeSymbols ?: HuobiTelegramSymbols) => {
     tryCatchFinallyUtil(() => {
         const markets: Array<string> = `${process.env.HUOBI_QUOTE_ASSETS}`.split(",").map((a) => a.toLowerCase())
-        const rgHuobiSymbolsEntries: Array<[string, HuobiTelegramNotificationsSymbols[""]]> = Object.entries(HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS)
+        const rgHuobiSymbolsEntries: Array<[string, HuobiTelegramSymbols[""]]> = Object.entries(HUOBI_TELEGRAM_SYMBOLS)
         for (let a = 0; a < markets.length; a++) {
             for (let b = 0; b < rgHuobiSymbolsEntries.length; b++) {
                 const [baseCurrency, value] = rgHuobiSymbolsEntries[b]
-                if (!HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency]) {
-                    if (HUOBI_TELEGRAM_NOTIFICATION_SYMBOLS[baseCurrency][markets[a]]) {
+                if (!HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency]) {
+                    if (HUOBI_TELEGRAM_SYMBOLS[baseCurrency][markets[a]]) {
                         const tradePair = value[markets[a]]
                         if (tradePair.state === "online") {
-                            HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency] = {
+                            HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency] = {
                                 symbol: tradePair.symbol,
                                 baseCurrency: tradePair["base-currency"],
                                 baseCurrencyDecimalPlaces: tradePair["amount-precision"],
@@ -169,11 +169,11 @@ const processTradingPairs = (newSubscribeSymbols ?: HuobiTelegramNotificationsSy
         }
         // Subsequent
         else {
-            const unsubscribeSymbolsEntries: [string, HuobiTelegramNotificationsSymbols[""]][] = Object.entries(unsubscribeSymbols)
+            const unsubscribeSymbolsEntries: [string, HuobiTelegramSymbols[""]][] = Object.entries(unsubscribeSymbols)
             if (unsubscribeSymbolsEntries.length > 0) {
                 for (let a = 0; a < unsubscribeSymbolsEntries.length; a++) {
                     const [baseCurrency] = unsubscribeSymbolsEntries[a]
-                    const tradePair: HuobiTelegramNotificationsTradingPairs[""] = HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency]
+                    const tradePair: HuobiTelegramTradingPairs[""] = HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency]
                     HUOBI_MAIN_WEBSOCKET.send(JSON.stringify({
                         unsub: `market.${tradePair.symbol}.ticker`,
                         id: String(new Date().getTime()),
@@ -181,11 +181,11 @@ const processTradingPairs = (newSubscribeSymbols ?: HuobiTelegramNotificationsSy
                 }
             }
 
-            const newSubscribeSymbolsEntries: [string, HuobiTelegramNotificationsSymbols[""]][] = Object.entries(newSubscribeSymbols)
+            const newSubscribeSymbolsEntries: [string, HuobiTelegramSymbols[""]][] = Object.entries(newSubscribeSymbols)
             if (newSubscribeSymbolsEntries.length > 0) {
                 for (let a = 0; a < newSubscribeSymbolsEntries.length; a++) {
                     const [baseCurrency] = newSubscribeSymbolsEntries[a]
-                    const tradePair: HuobiTelegramNotificationsTradingPairs[""] = HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency]
+                    const tradePair: HuobiTelegramTradingPairs[""] = HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency]
                     if (tradePair) {
                         HUOBI_MAIN_WEBSOCKET.send(JSON.stringify({
                             sub: `market.${tradePair.symbol}.ticker`,
@@ -241,7 +241,7 @@ const processData = (Data: HuobiWebSocketResponse) => {
             }
             if (Data.tick) {
                 symbol = getSymbolFromTopic(Data.ch)
-                let tradingPair: HuobiTelegramNotificationsTradingPairs[""] = (Object.entries(HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS).filter(([_, v]) => v.symbol === symbol)[0] ?? [])[1]
+                let tradingPair: HuobiTelegramTradingPairs[""] = (Object.entries(HUOBI_TELEGRAM_TRADING_PAIRS).filter(([_, v]) => v.symbol === symbol)[0] ?? [])[1]
                 if (tradingPair) {
                     const {baseCurrency, quoteCurrency} = tradingPair
                     // Notifications service
@@ -251,33 +251,33 @@ const processData = (Data: HuobiWebSocketResponse) => {
 
                     if (tradingPair.notificationBuyPrice) {
                         if (newNotificationBuyPrice < tradingPair.notificationBuyPrice) {
-                            HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationBuyPrice = newNotificationBuyPrice
+                            HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationBuyPrice = newNotificationBuyPrice
                         }
                     } else {
-                        HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationBuyPrice = newNotificationBuyPrice
+                        HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationBuyPrice = newNotificationBuyPrice
                     }
                     if (Data.tick.lastPrice >= tradingPair.notificationBuyPrice && tradingPair.notificationBuyPrice !== 0) {
-                        HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationStrikeCount += 1
-                        tradingPair = HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency]
+                        HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationStrikeCount += 1
+                        tradingPair = HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency]
                         if (tradingPair.notificationStrikeCount === 1) {
-                            HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationStrikeUnitPrice = fixDecimalPlaces((tradingPair.notificationBuyPrice * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)) / (1.00 + Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)), tradingPair.quoteCurrencyDecimalPlaces)
+                            HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationStrikeUnitPrice = fixDecimalPlaces((tradingPair.notificationBuyPrice * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)) / (1.00 + Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT)), tradingPair.quoteCurrencyDecimalPlaces)
                         }
 
-                        tradingPair = HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency]
+                        tradingPair = HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency]
                         if (tradingPair.notificationStrikeCount > 1) buySignalStrikeNotification(symbol.toUpperCase(), Data.tick.lastPrice, tradingPair.notificationStrikeCount, Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT), quoteCurrency)
 
                         if (tradingPair.notificationStrikeTimeoutId) clearTimeout(tradingPair.notificationStrikeTimeoutId)
-                        HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationStrikeTimeoutId = setTimeout(
+                        HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationStrikeTimeoutId = setTimeout(
                             () => {
-                                HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationStrikeCount = 0
-                                HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationBuyPrice = 0
-                                HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationStrikeUnitPrice = 0
+                                HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationStrikeCount = 0
+                                HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationBuyPrice = 0
+                                HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationStrikeUnitPrice = 0
 
-                                clearTimeout(HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationStrikeTimeoutId)
-                                HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationStrikeTimeoutId = undefined
+                                clearTimeout(HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationStrikeTimeoutId)
+                                HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationStrikeTimeoutId = undefined
                             }, 1000 * 60 * Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_TIMEOUT_MINS) * tradingPair.notificationStrikeCount
                         ) as NodeJS.Timeout
-                        HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].notificationBuyPrice = tradingPair.notificationBuyPrice + tradingPair.notificationStrikeUnitPrice
+                        HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationBuyPrice = tradingPair.notificationBuyPrice + tradingPair.notificationStrikeUnitPrice
                     }
 
                     // APE-IN service
@@ -287,16 +287,16 @@ const processData = (Data: HuobiWebSocketResponse) => {
                         sendApeInNotification(symbol.toUpperCase(), percentChange)
 
                         // Set next percentage
-                        HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].apeInPercentage = tradingPair.apeInPercentage + Number(process.env.APE_IN_INCREMENT_PERCENTAGE)
+                        HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].apeInPercentage = tradingPair.apeInPercentage + Number(process.env.APE_IN_INCREMENT_PERCENTAGE)
                         if (tradingPair.apeInTimeoutId) {
                             clearTimeout(tradingPair.apeInTimeoutId)
                         }
-                        HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].apeInTimeoutId = setTimeout(() => {
+                        HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].apeInTimeoutId = setTimeout(() => {
                             // Reset notification percentage
-                            HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].apeInPercentage = Number(process.env.APE_IN_START_PERCENTAGE)
+                            HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].apeInPercentage = Number(process.env.APE_IN_START_PERCENTAGE)
 
-                            clearTimeout(HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].apeInTimeoutId)
-                            HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS[baseCurrency].apeInTimeoutId = undefined
+                            clearTimeout(HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].apeInTimeoutId)
+                            HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].apeInTimeoutId = undefined
                         }, 1000 * 60 * 60 * Number(process.env.APE_IN_PERCENT_TIMEOUT_HRS))
                     }
                 }
@@ -312,7 +312,7 @@ const runWebSocket = () => {
             HUOBI_MAIN_WEBSOCKET = new WebSocket(process.env.HUOBI_WEBSOCKET_URL)
 
             HUOBI_MAIN_WEBSOCKET.on("open", () => {
-                Object.entries(HUOBI_TELEGRAM_NOTIFICATION_TRADING_PAIRS).forEach(([key, value]) => {
+                Object.entries(HUOBI_TELEGRAM_TRADING_PAIRS).forEach(([key, value]) => {
                     HUOBI_MAIN_WEBSOCKET.send(JSON.stringify({
                         sub: `market.${value.symbol}.ticker`,
                         id: String(new Date().getTime()),
