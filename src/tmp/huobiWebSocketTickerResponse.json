@@ -1,0 +1,19 @@
+{
+  "ch": "market.eosusdt.ticker",
+  "ts": 1662269659599,
+  "tick": {
+    "open": 1.5719,
+    "high": 1.6004,
+    "low": 1.5113,
+    "close": 1.5148,
+    "amount": 2543190.952999642,
+    "vol": 3909103.3974202145,
+    "count": 19732,
+    "bid": 1.5144,
+    "bidSize": 4.9959,
+    "ask": 1.5147,
+    "askSize": 29.4,
+    "lastPrice": 1.5148,
+    "lastSize": 29.4
+  }
+}

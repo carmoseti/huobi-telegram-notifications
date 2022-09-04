@@ -1,0 +1,4601 @@
+{
+  "pha": {
+    "symbol": "phausdt",
+    "baseCurrency": "pha",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "velo": {
+    "symbol": "velousdt",
+    "baseCurrency": "velo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "win": {
+    "symbol": "winusdt",
+    "baseCurrency": "win",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "uuu": {
+    "symbol": "uuuusdt",
+    "baseCurrency": "uuu",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "trac": {
+    "symbol": "tracusdt",
+    "baseCurrency": "trac",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "aac": {
+    "symbol": "aacusdt",
+    "baseCurrency": "aac",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mdx": {
+    "symbol": "mdxusdt",
+    "baseCurrency": "mdx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "idex": {
+    "symbol": "idexusdt",
+    "baseCurrency": "idex",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dose": {
+    "symbol": "doseusdt",
+    "baseCurrency": "dose",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "multi": {
+    "symbol": "multiusdt",
+    "baseCurrency": "multi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "egt": {
+    "symbol": "egtusdt",
+    "baseCurrency": "egt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "o3": {
+    "symbol": "o3usdt",
+    "baseCurrency": "o3",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ren": {
+    "symbol": "renusdt",
+    "baseCurrency": "ren",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "flz": {
+    "symbol": "flzusdt",
+    "baseCurrency": "flz",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "glm": {
+    "symbol": "glmusdt",
+    "baseCurrency": "glm",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xmx": {
+    "symbol": "xmxusdt",
+    "baseCurrency": "xmx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "lina": {
+    "symbol": "linausdt",
+    "baseCurrency": "lina",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "rndr": {
+    "symbol": "rndrusdt",
+    "baseCurrency": "rndr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "inj": {
+    "symbol": "injusdt",
+    "baseCurrency": "inj",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dot2s": {
+    "symbol": "dot2susdt",
+    "baseCurrency": "dot2s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "aave": {
+    "symbol": "aaveusdt",
+    "baseCurrency": "aave",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "nuls": {
+    "symbol": "nulsusdt",
+    "baseCurrency": "nuls",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "zkp": {
+    "symbol": "zkpusdt",
+    "baseCurrency": "zkp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "kava": {
+    "symbol": "kavausdt",
+    "baseCurrency": "kava",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sofi": {
+    "symbol": "sofiusdt",
+    "baseCurrency": "sofi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "btc3l": {
+    "symbol": "btc3lusdt",
+    "baseCurrency": "btc3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "orbr": {
+    "symbol": "orbrusdt",
+    "baseCurrency": "orbr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "cru": {
+    "symbol": "cruusdt",
+    "baseCurrency": "cru",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "nkn": {
+    "symbol": "nknusdt",
+    "baseCurrency": "nkn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "flow": {
+    "symbol": "flowusdt",
+    "baseCurrency": "flow",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "link": {
+    "symbol": "linkusdt",
+    "baseCurrency": "link",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "pvt": {
+    "symbol": "pvtusdt",
+    "baseCurrency": "pvt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "nano": {
+    "symbol": "nanousdt",
+    "baseCurrency": "nano",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "em": {
+    "symbol": "emusdt",
+    "baseCurrency": "em",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mta": {
+    "symbol": "mtausdt",
+    "baseCurrency": "mta",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mds": {
+    "symbol": "mdsusdt",
+    "baseCurrency": "mds",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ftt": {
+    "symbol": "fttusdt",
+    "baseCurrency": "ftt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ogo": {
+    "symbol": "ogousdt",
+    "baseCurrency": "ogo",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "hbar": {
+    "symbol": "hbarusdt",
+    "baseCurrency": "hbar",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "box": {
+    "symbol": "boxusdt",
+    "baseCurrency": "box",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "theta": {
+    "symbol": "thetausdt",
+    "baseCurrency": "theta",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sign": {
+    "symbol": "signusdt",
+    "baseCurrency": "sign",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "cnns": {
+    "symbol": "cnnsusdt",
+    "baseCurrency": "cnns",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ring": {
+    "symbol": "ringusdt",
+    "baseCurrency": "ring",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "srt": {
+    "symbol": "srtusdt",
+    "baseCurrency": "srt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "top": {
+    "symbol": "topusdt",
+    "baseCurrency": "top",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "bal": {
+    "symbol": "balusdt",
+    "baseCurrency": "bal",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "reef": {
+    "symbol": "reefusdt",
+    "baseCurrency": "reef",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "dio": {
+    "symbol": "diousdt",
+    "baseCurrency": "dio",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "nest": {
+    "symbol": "nestusdt",
+    "baseCurrency": "nest",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 5
+  },
+  "stpt": {
+    "symbol": "stptusdt",
+    "baseCurrency": "stpt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "crpt": {
+    "symbol": "crptusdt",
+    "baseCurrency": "crpt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "1inch": {
+    "symbol": "1inchusdt",
+    "baseCurrency": "1inch",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "cere": {
+    "symbol": "cereusdt",
+    "baseCurrency": "cere",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "new": {
+    "symbol": "newusdt",
+    "baseCurrency": "new",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "xrt": {
+    "symbol": "xrtusdt",
+    "baseCurrency": "xrt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dbc": {
+    "symbol": "dbcusdt",
+    "baseCurrency": "dbc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "gcoin": {
+    "symbol": "gcoinusdt",
+    "baseCurrency": "gcoin",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "inv": {
+    "symbol": "invusdt",
+    "baseCurrency": "inv",
+    "baseCurrencyDecimalPlaces": 6,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "astr": {
+    "symbol": "astrusdt",
+    "baseCurrency": "astr",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ygg": {
+    "symbol": "yggusdt",
+    "baseCurrency": "ygg",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "medamon": {
+    "symbol": "medamonusdt",
+    "baseCurrency": "medamon",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "hbb": {
+    "symbol": "hbbusdt",
+    "baseCurrency": "hbb",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xrp3l": {
+    "symbol": "xrp3lusdt",
+    "baseCurrency": "xrp3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "loom": {
+    "symbol": "loomusdt",
+    "baseCurrency": "loom",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "anml": {
+    "symbol": "anmlusdt",
+    "baseCurrency": "anml",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "bp": {
+    "symbol": "bpusdt",
+    "baseCurrency": "bp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "bix": {
+    "symbol": "bixusdt",
+    "baseCurrency": "bix",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "dta": {
+    "symbol": "dtausdt",
+    "baseCurrency": "dta",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "orc": {
+    "symbol": "orcusdt",
+    "baseCurrency": "orc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "doge": {
+    "symbol": "dogeusdt",
+    "baseCurrency": "doge",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "knc": {
+    "symbol": "kncusdt",
+    "baseCurrency": "knc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dot": {
+    "symbol": "dotusdt",
+    "baseCurrency": "dot",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xtz": {
+    "symbol": "xtzusdt",
+    "baseCurrency": "xtz",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ae": {
+    "symbol": "aeusdt",
+    "baseCurrency": "ae",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "pando": {
+    "symbol": "pandousdt",
+    "baseCurrency": "pando",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "btc": {
+    "symbol": "btcusdt",
+    "baseCurrency": "btc",
+    "baseCurrencyDecimalPlaces": 6,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "for": {
+    "symbol": "forusdt",
+    "baseCurrency": "for",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "srm": {
+    "symbol": "srmusdt",
+    "baseCurrency": "srm",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "lhb": {
+    "symbol": "lhbusdt",
+    "baseCurrency": "lhb",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "zen": {
+    "symbol": "zenusdt",
+    "baseCurrency": "zen",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "npt": {
+    "symbol": "nptusdt",
+    "baseCurrency": "npt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "breed": {
+    "symbol": "breedusdt",
+    "baseCurrency": "breed",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "eos": {
+    "symbol": "eosusdt",
+    "baseCurrency": "eos",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "oxt": {
+    "symbol": "oxtusdt",
+    "baseCurrency": "oxt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "moov": {
+    "symbol": "moovusdt",
+    "baseCurrency": "moov",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "smt": {
+    "symbol": "smtusdt",
+    "baseCurrency": "smt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "fil": {
+    "symbol": "filusdt",
+    "baseCurrency": "fil",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "egame": {
+    "symbol": "egameusdt",
+    "baseCurrency": "egame",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "hot": {
+    "symbol": "hotusdt",
+    "baseCurrency": "hot",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "babydoge": {
+    "symbol": "babydogeusdt",
+    "baseCurrency": "babydoge",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "dao": {
+    "symbol": "daousdt",
+    "baseCurrency": "dao",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dash": {
+    "symbol": "dashusdt",
+    "baseCurrency": "dash",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "opul": {
+    "symbol": "opulusdt",
+    "baseCurrency": "opul",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "storj": {
+    "symbol": "storjusdt",
+    "baseCurrency": "storj",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "near": {
+    "symbol": "nearusdt",
+    "baseCurrency": "near",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "cro": {
+    "symbol": "crousdt",
+    "baseCurrency": "cro",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "hotcross": {
+    "symbol": "hotcrossusdt",
+    "baseCurrency": "hotcross",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "qrdo": {
+    "symbol": "qrdousdt",
+    "baseCurrency": "qrdo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "cvp": {
+    "symbol": "cvpusdt",
+    "baseCurrency": "cvp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sand": {
+    "symbol": "sandusdt",
+    "baseCurrency": "sand",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "boson": {
+    "symbol": "bosonusdt",
+    "baseCurrency": "boson",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "hpt": {
+    "symbol": "hptusdt",
+    "baseCurrency": "hpt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "chz": {
+    "symbol": "chzusdt",
+    "baseCurrency": "chz",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ont": {
+    "symbol": "ontusdt",
+    "baseCurrency": "ont",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "apn": {
+    "symbol": "apnusdt",
+    "baseCurrency": "apn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "bull": {
+    "symbol": "bullusdt",
+    "baseCurrency": "bull",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "matic": {
+    "symbol": "maticusdt",
+    "baseCurrency": "matic",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "galft": {
+    "symbol": "galftusdt",
+    "baseCurrency": "galft",
+    "baseCurrencyDecimalPlaces": 6,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mcontent": {
+    "symbol": "mcontentusdt",
+    "baseCurrency": "mcontent",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "trx": {
+    "symbol": "trxusdt",
+    "baseCurrency": "trx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "skl": {
+    "symbol": "sklusdt",
+    "baseCurrency": "skl",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "atom": {
+    "symbol": "atomusdt",
+    "baseCurrency": "atom",
+    "baseCurrencyDecimalPlaces": 3,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "utk": {
+    "symbol": "utkusdt",
+    "baseCurrency": "utk",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "stc": {
+    "symbol": "stcusdt",
+    "baseCurrency": "stc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "loot": {
+    "symbol": "lootusdt",
+    "baseCurrency": "loot",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "brwl": {
+    "symbol": "brwlusdt",
+    "baseCurrency": "brwl",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "egs": {
+    "symbol": "egsusdt",
+    "baseCurrency": "egs",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "act": {
+    "symbol": "actusdt",
+    "baseCurrency": "act",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "cmt": {
+    "symbol": "cmtusdt",
+    "baseCurrency": "cmt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "trb": {
+    "symbol": "trbusdt",
+    "baseCurrency": "trb",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ngl": {
+    "symbol": "nglusdt",
+    "baseCurrency": "ngl",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "lamb": {
+    "symbol": "lambusdt",
+    "baseCurrency": "lamb",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "nbs": {
+    "symbol": "nbsusdt",
+    "baseCurrency": "nbs",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "sd": {
+    "symbol": "sdusdt",
+    "baseCurrency": "sd",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "eth3s": {
+    "symbol": "eth3susdt",
+    "baseCurrency": "eth3s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "sol": {
+    "symbol": "solusdt",
+    "baseCurrency": "sol",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wicc": {
+    "symbol": "wiccusdt",
+    "baseCurrency": "wicc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ocn": {
+    "symbol": "ocnusdt",
+    "baseCurrency": "ocn",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "bsv": {
+    "symbol": "bsvusdt",
+    "baseCurrency": "bsv",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ar": {
+    "symbol": "arusdt",
+    "baseCurrency": "ar",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "znt": {
+    "symbol": "zntusdt",
+    "baseCurrency": "znt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "atp": {
+    "symbol": "atpusdt",
+    "baseCurrency": "atp",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 7
+  },
+  "stn": {
+    "symbol": "stnusdt",
+    "baseCurrency": "stn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "lat": {
+    "symbol": "latusdt",
+    "baseCurrency": "lat",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "slc": {
+    "symbol": "slcusdt",
+    "baseCurrency": "slc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ach": {
+    "symbol": "achusdt",
+    "baseCurrency": "ach",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "loka": {
+    "symbol": "lokausdt",
+    "baseCurrency": "loka",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "fti": {
+    "symbol": "ftiusdt",
+    "baseCurrency": "fti",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "agld": {
+    "symbol": "agldusdt",
+    "baseCurrency": "agld",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "usdd": {
+    "symbol": "usddusdt",
+    "baseCurrency": "usdd",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sun": {
+    "symbol": "sunusdt",
+    "baseCurrency": "sun",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "kube": {
+    "symbol": "kubeusdt",
+    "baseCurrency": "kube",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ada": {
+    "symbol": "adausdt",
+    "baseCurrency": "ada",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "hit": {
+    "symbol": "hitusdt",
+    "baseCurrency": "hit",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "ply": {
+    "symbol": "plyusdt",
+    "baseCurrency": "ply",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ghst": {
+    "symbol": "ghstusdt",
+    "baseCurrency": "ghst",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dks": {
+    "symbol": "dksusdt",
+    "baseCurrency": "dks",
+    "baseCurrencyDecimalPlaces": 6,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "fuse": {
+    "symbol": "fuseusdt",
+    "baseCurrency": "fuse",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "qtum": {
+    "symbol": "qtumusdt",
+    "baseCurrency": "qtum",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "seele": {
+    "symbol": "seeleusdt",
+    "baseCurrency": "seele",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "shib": {
+    "symbol": "shibusdt",
+    "baseCurrency": "shib",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "mir": {
+    "symbol": "mirusdt",
+    "baseCurrency": "mir",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "cake": {
+    "symbol": "cakeusdt",
+    "baseCurrency": "cake",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dydx": {
+    "symbol": "dydxusdt",
+    "baseCurrency": "dydx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "filda": {
+    "symbol": "fildausdt",
+    "baseCurrency": "filda",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "steth": {
+    "symbol": "stethusdt",
+    "baseCurrency": "steth",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "lunc": {
+    "symbol": "luncusdt",
+    "baseCurrency": "lunc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "elf": {
+    "symbol": "elfusdt",
+    "baseCurrency": "elf",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "algo": {
+    "symbol": "algousdt",
+    "baseCurrency": "algo",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dock": {
+    "symbol": "dockusdt",
+    "baseCurrency": "dock",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "sys": {
+    "symbol": "sysusdt",
+    "baseCurrency": "sys",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "omg": {
+    "symbol": "omgusdt",
+    "baseCurrency": "omg",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "badger": {
+    "symbol": "badgerusdt",
+    "baseCurrency": "badger",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xmr": {
+    "symbol": "xmrusdt",
+    "baseCurrency": "xmr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "chr": {
+    "symbol": "chrusdt",
+    "baseCurrency": "chr",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "skm": {
+    "symbol": "skmusdt",
+    "baseCurrency": "skm",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mass": {
+    "symbol": "massusdt",
+    "baseCurrency": "mass",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "kcash": {
+    "symbol": "kcashusdt",
+    "baseCurrency": "kcash",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "yam": {
+    "symbol": "yamusdt",
+    "baseCurrency": "yam",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xcad": {
+    "symbol": "xcadusdt",
+    "baseCurrency": "xcad",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "cel": {
+    "symbol": "celusdt",
+    "baseCurrency": "cel",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "let": {
+    "symbol": "letusdt",
+    "baseCurrency": "let",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ast": {
+    "symbol": "astusdt",
+    "baseCurrency": "ast",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "spell": {
+    "symbol": "spellusdt",
+    "baseCurrency": "spell",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "pundix": {
+    "symbol": "pundixusdt",
+    "baseCurrency": "pundix",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "fis": {
+    "symbol": "fisusdt",
+    "baseCurrency": "fis",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "crv": {
+    "symbol": "crvusdt",
+    "baseCurrency": "crv",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "band": {
+    "symbol": "bandusdt",
+    "baseCurrency": "band",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mln": {
+    "symbol": "mlnusdt",
+    "baseCurrency": "mln",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "brt": {
+    "symbol": "brtusdt",
+    "baseCurrency": "brt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "rss3": {
+    "symbol": "rss3usdt",
+    "baseCurrency": "rss3",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "bch": {
+    "symbol": "bchusdt",
+    "baseCurrency": "bch",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "dia": {
+    "symbol": "diausdt",
+    "baseCurrency": "dia",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "pols": {
+    "symbol": "polsusdt",
+    "baseCurrency": "pols",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "iris": {
+    "symbol": "irisusdt",
+    "baseCurrency": "iris",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "evmos": {
+    "symbol": "evmosusdt",
+    "baseCurrency": "evmos",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ltc": {
+    "symbol": "ltcusdt",
+    "baseCurrency": "ltc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "bnt": {
+    "symbol": "bntusdt",
+    "baseCurrency": "bnt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gof": {
+    "symbol": "gofusdt",
+    "baseCurrency": "gof",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "insur": {
+    "symbol": "insurusdt",
+    "baseCurrency": "insur",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "pond": {
+    "symbol": "pondusdt",
+    "baseCurrency": "pond",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mx": {
+    "symbol": "mxusdt",
+    "baseCurrency": "mx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wxt": {
+    "symbol": "wxtusdt",
+    "baseCurrency": "wxt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "pearl": {
+    "symbol": "pearlusdt",
+    "baseCurrency": "pearl",
+    "baseCurrencyDecimalPlaces": 6,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "ksm": {
+    "symbol": "ksmusdt",
+    "baseCurrency": "ksm",
+    "baseCurrencyDecimalPlaces": 3,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "zec": {
+    "symbol": "zecusdt",
+    "baseCurrency": "zec",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "rad": {
+    "symbol": "radusdt",
+    "baseCurrency": "rad",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gnx": {
+    "symbol": "gnxusdt",
+    "baseCurrency": "gnx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "vet": {
+    "symbol": "vetusdt",
+    "baseCurrency": "vet",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "lbp": {
+    "symbol": "lbpusdt",
+    "baseCurrency": "lbp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "etc": {
+    "symbol": "etcusdt",
+    "baseCurrency": "etc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "enj": {
+    "symbol": "enjusdt",
+    "baseCurrency": "enj",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "snx": {
+    "symbol": "snxusdt",
+    "baseCurrency": "snx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "abt": {
+    "symbol": "abtusdt",
+    "baseCurrency": "abt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gq": {
+    "symbol": "gqusdt",
+    "baseCurrency": "gq",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "wndr": {
+    "symbol": "wndrusdt",
+    "baseCurrency": "wndr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "kok": {
+    "symbol": "kokusdt",
+    "baseCurrency": "kok",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "phcr": {
+    "symbol": "phcrusdt",
+    "baseCurrency": "phcr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "whale": {
+    "symbol": "whaleusdt",
+    "baseCurrency": "whale",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "arv": {
+    "symbol": "arvusdt",
+    "baseCurrency": "arv",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "xem": {
+    "symbol": "xemusdt",
+    "baseCurrency": "xem",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "people": {
+    "symbol": "peopleusdt",
+    "baseCurrency": "people",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "zrx": {
+    "symbol": "zrxusdt",
+    "baseCurrency": "zrx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "nsure": {
+    "symbol": "nsureusdt",
+    "baseCurrency": "nsure",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mtl": {
+    "symbol": "mtlusdt",
+    "baseCurrency": "mtl",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sxp": {
+    "symbol": "sxpusdt",
+    "baseCurrency": "sxp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "btt": {
+    "symbol": "bttusdt",
+    "baseCurrency": "btt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "vsys": {
+    "symbol": "vsysusdt",
+    "baseCurrency": "vsys",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ant": {
+    "symbol": "antusdt",
+    "baseCurrency": "ant",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "value": {
+    "symbol": "valueusdt",
+    "baseCurrency": "value",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "yfii": {
+    "symbol": "yfiiusdt",
+    "baseCurrency": "yfii",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gmpd": {
+    "symbol": "gmpdusdt",
+    "baseCurrency": "gmpd",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "polc": {
+    "symbol": "polcusdt",
+    "baseCurrency": "polc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wtc": {
+    "symbol": "wtcusdt",
+    "baseCurrency": "wtc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "swap": {
+    "symbol": "swapusdt",
+    "baseCurrency": "swap",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "clv": {
+    "symbol": "clvusdt",
+    "baseCurrency": "clv",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dyp": {
+    "symbol": "dypusdt",
+    "baseCurrency": "dyp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "hive": {
+    "symbol": "hiveusdt",
+    "baseCurrency": "hive",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "kai": {
+    "symbol": "kaiusdt",
+    "baseCurrency": "kai",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "sc": {
+    "symbol": "scusdt",
+    "baseCurrency": "sc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ht": {
+    "symbol": "htusdt",
+    "baseCurrency": "ht",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "luna": {
+    "symbol": "lunausdt",
+    "baseCurrency": "luna",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "pla": {
+    "symbol": "plausdt",
+    "baseCurrency": "pla",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "floki": {
+    "symbol": "flokiusdt",
+    "baseCurrency": "floki",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "pai": {
+    "symbol": "paiusdt",
+    "baseCurrency": "pai",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mev": {
+    "symbol": "mevusdt",
+    "baseCurrency": "mev",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "nym": {
+    "symbol": "nymusdt",
+    "baseCurrency": "nym",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "cspr": {
+    "symbol": "csprusdt",
+    "baseCurrency": "cspr",
+    "baseCurrencyDecimalPlaces": 1,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "talk": {
+    "symbol": "talkusdt",
+    "baseCurrency": "talk",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "bit": {
+    "symbol": "bitusdt",
+    "baseCurrency": "bit",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dfi": {
+    "symbol": "dfiusdt",
+    "baseCurrency": "dfi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "fil3l": {
+    "symbol": "fil3lusdt",
+    "baseCurrency": "fil3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 9
+  },
+  "front": {
+    "symbol": "frontusdt",
+    "baseCurrency": "front",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "iost": {
+    "symbol": "iostusdt",
+    "baseCurrency": "iost",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "beth": {
+    "symbol": "bethusdt",
+    "baseCurrency": "beth",
+    "baseCurrencyDecimalPlaces": 6,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "titan": {
+    "symbol": "titanusdt",
+    "baseCurrency": "titan",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "radar": {
+    "symbol": "radarusdt",
+    "baseCurrency": "radar",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "jumbo": {
+    "symbol": "jumbousdt",
+    "baseCurrency": "jumbo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ela": {
+    "symbol": "elausdt",
+    "baseCurrency": "ela",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "tribe": {
+    "symbol": "tribeusdt",
+    "baseCurrency": "tribe",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "num": {
+    "symbol": "numusdt",
+    "baseCurrency": "num",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "bat": {
+    "symbol": "batusdt",
+    "baseCurrency": "bat",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gst": {
+    "symbol": "gstusdt",
+    "baseCurrency": "gst",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "fx": {
+    "symbol": "fxusdt",
+    "baseCurrency": "fx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "neo": {
+    "symbol": "neousdt",
+    "baseCurrency": "neo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "azero": {
+    "symbol": "azerousdt",
+    "baseCurrency": "azero",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "yfi": {
+    "symbol": "yfiusdt",
+    "baseCurrency": "yfi",
+    "baseCurrencyDecimalPlaces": 6,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "face": {
+    "symbol": "faceusdt",
+    "baseCurrency": "face",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "akro": {
+    "symbol": "akrousdt",
+    "baseCurrency": "akro",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 5
+  },
+  "vvs": {
+    "symbol": "vvsusdt",
+    "baseCurrency": "vvs",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "sushi": {
+    "symbol": "sushiusdt",
+    "baseCurrency": "sushi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "revo": {
+    "symbol": "revousdt",
+    "baseCurrency": "revo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "uma": {
+    "symbol": "umausdt",
+    "baseCurrency": "uma",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "iota": {
+    "symbol": "iotausdt",
+    "baseCurrency": "iota",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "axs": {
+    "symbol": "axsusdt",
+    "baseCurrency": "axs",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "zil": {
+    "symbol": "zilusdt",
+    "baseCurrency": "zil",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "fiu": {
+    "symbol": "fiuusdt",
+    "baseCurrency": "fiu",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "dac": {
+    "symbol": "dacusdt",
+    "baseCurrency": "dac",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "tt": {
+    "symbol": "ttusdt",
+    "baseCurrency": "tt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "gal": {
+    "symbol": "galusdt",
+    "baseCurrency": "gal",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ftm": {
+    "symbol": "ftmusdt",
+    "baseCurrency": "ftm",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "joy": {
+    "symbol": "joyusdt",
+    "baseCurrency": "joy",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "eos3l": {
+    "symbol": "eos3lusdt",
+    "baseCurrency": "eos3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "grt": {
+    "symbol": "grtusdt",
+    "baseCurrency": "grt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "firo": {
+    "symbol": "firousdt",
+    "baseCurrency": "firo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "uip": {
+    "symbol": "uipusdt",
+    "baseCurrency": "uip",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "xrp": {
+    "symbol": "xrpusdt",
+    "baseCurrency": "xrp",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 5
+  },
+  "orb": {
+    "symbol": "orbusdt",
+    "baseCurrency": "orb",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "comp": {
+    "symbol": "compusdt",
+    "baseCurrency": "comp",
+    "baseCurrencyDecimalPlaces": 6,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "eth": {
+    "symbol": "ethusdt",
+    "baseCurrency": "eth",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "nexo": {
+    "symbol": "nexousdt",
+    "baseCurrency": "nexo",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "swftc": {
+    "symbol": "swftcusdt",
+    "baseCurrency": "swftc",
+    "baseCurrencyDecimalPlaces": 3,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 7
+  },
+  "dka": {
+    "symbol": "dkausdt",
+    "baseCurrency": "dka",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "gno": {
+    "symbol": "gnousdt",
+    "baseCurrency": "gno",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "roco": {
+    "symbol": "rocousdt",
+    "baseCurrency": "roco",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "hsf": {
+    "symbol": "hsfusdt",
+    "baseCurrency": "hsf",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "push": {
+    "symbol": "pushusdt",
+    "baseCurrency": "push",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mpl": {
+    "symbol": "mplusdt",
+    "baseCurrency": "mpl",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "rvn": {
+    "symbol": "rvnusdt",
+    "baseCurrency": "rvn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "blz": {
+    "symbol": "blzusdt",
+    "baseCurrency": "blz",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "can": {
+    "symbol": "canusdt",
+    "baseCurrency": "can",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "cre": {
+    "symbol": "creusdt",
+    "baseCurrency": "cre",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ape": {
+    "symbol": "apeusdt",
+    "baseCurrency": "ape",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "api3": {
+    "symbol": "api3usdt",
+    "baseCurrency": "api3",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "bts": {
+    "symbol": "btsusdt",
+    "baseCurrency": "bts",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "avax": {
+    "symbol": "avaxusdt",
+    "baseCurrency": "avax",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ryoma": {
+    "symbol": "ryomausdt",
+    "baseCurrency": "ryoma",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "vidy": {
+    "symbol": "vidyusdt",
+    "baseCurrency": "vidy",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "bch3l": {
+    "symbol": "bch3lusdt",
+    "baseCurrency": "bch3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "movr": {
+    "symbol": "movrusdt",
+    "baseCurrency": "movr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "oct": {
+    "symbol": "octusdt",
+    "baseCurrency": "oct",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "nas": {
+    "symbol": "nasusdt",
+    "baseCurrency": "nas",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "epik": {
+    "symbol": "epikusdt",
+    "baseCurrency": "epik",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "elon": {
+    "symbol": "elonusdt",
+    "baseCurrency": "elon",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 9
+  },
+  "lxt": {
+    "symbol": "lxtusdt",
+    "baseCurrency": "lxt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mbx": {
+    "symbol": "mbxusdt",
+    "baseCurrency": "mbx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "poolz": {
+    "symbol": "poolzusdt",
+    "baseCurrency": "poolz",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "auction": {
+    "symbol": "auctionusdt",
+    "baseCurrency": "auction",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "tnb": {
+    "symbol": "tnbusdt",
+    "baseCurrency": "tnb",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "coti": {
+    "symbol": "cotiusdt",
+    "baseCurrency": "coti",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "tlm": {
+    "symbol": "tlmusdt",
+    "baseCurrency": "tlm",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "nft": {
+    "symbol": "nftusdt",
+    "baseCurrency": "nft",
+    "baseCurrencyDecimalPlaces": 0,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "gt": {
+    "symbol": "gtusdt",
+    "baseCurrency": "gt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "fsn": {
+    "symbol": "fsnusdt",
+    "baseCurrency": "fsn",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "imx": {
+    "symbol": "imxusdt",
+    "baseCurrency": "imx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "swrv": {
+    "symbol": "swrvusdt",
+    "baseCurrency": "swrv",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "woo": {
+    "symbol": "woousdt",
+    "baseCurrency": "woo",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 5
+  },
+  "smcw": {
+    "symbol": "smcwusdt",
+    "baseCurrency": "smcw",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ogn": {
+    "symbol": "ognusdt",
+    "baseCurrency": "ogn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "solo": {
+    "symbol": "solousdt",
+    "baseCurrency": "solo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ruff": {
+    "symbol": "ruffusdt",
+    "baseCurrency": "ruff",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "holo": {
+    "symbol": "holousdt",
+    "baseCurrency": "holo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "well": {
+    "symbol": "wellusdt",
+    "baseCurrency": "well",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ctxc": {
+    "symbol": "ctxcusdt",
+    "baseCurrency": "ctxc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "eul": {
+    "symbol": "eulusdt",
+    "baseCurrency": "eul",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dfa": {
+    "symbol": "dfausdt",
+    "baseCurrency": "dfa",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "lrc": {
+    "symbol": "lrcusdt",
+    "baseCurrency": "lrc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "celo": {
+    "symbol": "celousdt",
+    "baseCurrency": "celo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mana": {
+    "symbol": "manausdt",
+    "baseCurrency": "mana",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ctxc2x": {
+    "symbol": "ctxc2xusdt",
+    "baseCurrency": "ctxc2x",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ranker": {
+    "symbol": "rankerusdt",
+    "baseCurrency": "ranker",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "btm": {
+    "symbol": "btmusdt",
+    "baseCurrency": "btm",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "h2o": {
+    "symbol": "h2ousdt",
+    "baseCurrency": "h2o",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "gf": {
+    "symbol": "gfusdt",
+    "baseCurrency": "gf",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "hype": {
+    "symbol": "hypeusdt",
+    "baseCurrency": "hype",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "icx": {
+    "symbol": "icxusdt",
+    "baseCurrency": "icx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "prq": {
+    "symbol": "prqusdt",
+    "baseCurrency": "prq",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dht": {
+    "symbol": "dhtusdt",
+    "baseCurrency": "dht",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "trace": {
+    "symbol": "traceusdt",
+    "baseCurrency": "trace",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "akt": {
+    "symbol": "aktusdt",
+    "baseCurrency": "akt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "bhd": {
+    "symbol": "bhdusdt",
+    "baseCurrency": "bhd",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "aury": {
+    "symbol": "auryusdt",
+    "baseCurrency": "aury",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "bch3s": {
+    "symbol": "bch3susdt",
+    "baseCurrency": "bch3s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "tava": {
+    "symbol": "tavausdt",
+    "baseCurrency": "tava",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mxc": {
+    "symbol": "mxcusdt",
+    "baseCurrency": "mxc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "lovely": {
+    "symbol": "lovelyusdt",
+    "baseCurrency": "lovely",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "xlm": {
+    "symbol": "xlmusdt",
+    "baseCurrency": "xlm",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "rlc": {
+    "symbol": "rlcusdt",
+    "baseCurrency": "rlc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "caw": {
+    "symbol": "cawusdt",
+    "baseCurrency": "caw",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "ctc": {
+    "symbol": "ctcusdt",
+    "baseCurrency": "ctc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wbtc": {
+    "symbol": "wbtcusdt",
+    "baseCurrency": "wbtc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "stg": {
+    "symbol": "stgusdt",
+    "baseCurrency": "stg",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ustc": {
+    "symbol": "ustcusdt",
+    "baseCurrency": "ustc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "node": {
+    "symbol": "nodeusdt",
+    "baseCurrency": "node",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "elu": {
+    "symbol": "eluusdt",
+    "baseCurrency": "elu",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "steem": {
+    "symbol": "steemusdt",
+    "baseCurrency": "steem",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "uni": {
+    "symbol": "uniusdt",
+    "baseCurrency": "uni",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xec": {
+    "symbol": "xecusdt",
+    "baseCurrency": "xec",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "waves": {
+    "symbol": "wavesusdt",
+    "baseCurrency": "waves",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xrp3s": {
+    "symbol": "xrp3susdt",
+    "baseCurrency": "xrp3s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "usdc": {
+    "symbol": "usdcusdt",
+    "baseCurrency": "usdc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xcn": {
+    "symbol": "xcnusdt",
+    "baseCurrency": "xcn",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "tlos": {
+    "symbol": "tlosusdt",
+    "baseCurrency": "tlos",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "stf": {
+    "symbol": "stfusdt",
+    "baseCurrency": "stf",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "aegis": {
+    "symbol": "aegisusdt",
+    "baseCurrency": "aegis",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "itc": {
+    "symbol": "itcusdt",
+    "baseCurrency": "itc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "dai": {
+    "symbol": "daiusdt",
+    "baseCurrency": "dai",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "adx": {
+    "symbol": "adxusdt",
+    "baseCurrency": "adx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "rifi": {
+    "symbol": "rifiusdt",
+    "baseCurrency": "rifi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xprt": {
+    "symbol": "xprtusdt",
+    "baseCurrency": "xprt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dcr": {
+    "symbol": "dcrusdt",
+    "baseCurrency": "dcr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "rsr": {
+    "symbol": "rsrusdt",
+    "baseCurrency": "rsr",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ankr": {
+    "symbol": "ankrusdt",
+    "baseCurrency": "ankr",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "rain": {
+    "symbol": "rainusdt",
+    "baseCurrency": "rain",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 5
+  },
+  "one": {
+    "symbol": "oneusdt",
+    "baseCurrency": "one",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "uos": {
+    "symbol": "uosusdt",
+    "baseCurrency": "uos",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "snt": {
+    "symbol": "sntusdt",
+    "baseCurrency": "snt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "iotx": {
+    "symbol": "iotxusdt",
+    "baseCurrency": "iotx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "glmr": {
+    "symbol": "glmrusdt",
+    "baseCurrency": "glmr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "fitfi": {
+    "symbol": "fitfiusdt",
+    "baseCurrency": "fitfi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "oland": {
+    "symbol": "olandusdt",
+    "baseCurrency": "oland",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mrs": {
+    "symbol": "mrsusdt",
+    "baseCurrency": "mrs",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wnd": {
+    "symbol": "wndusdt",
+    "baseCurrency": "wnd",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ckb": {
+    "symbol": "ckbusdt",
+    "baseCurrency": "ckb",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "sao": {
+    "symbol": "saousdt",
+    "baseCurrency": "sao",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ocean": {
+    "symbol": "oceanusdt",
+    "baseCurrency": "ocean",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "bsv3l": {
+    "symbol": "bsv3lusdt",
+    "baseCurrency": "bsv3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "waxp": {
+    "symbol": "waxpusdt",
+    "baseCurrency": "waxp",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "usdp": {
+    "symbol": "usdpusdt",
+    "baseCurrency": "usdp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "og": {
+    "symbol": "ogusdt",
+    "baseCurrency": "og",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "cvc": {
+    "symbol": "cvcusdt",
+    "baseCurrency": "cvc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mu": {
+    "symbol": "muusdt",
+    "baseCurrency": "mu",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "forth": {
+    "symbol": "forthusdt",
+    "baseCurrency": "forth",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ever": {
+    "symbol": "everusdt",
+    "baseCurrency": "ever",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "zks": {
+    "symbol": "zksusdt",
+    "baseCurrency": "zks",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "hc": {
+    "symbol": "hcusdt",
+    "baseCurrency": "hc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "df": {
+    "symbol": "dfusdt",
+    "baseCurrency": "df",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wnxm": {
+    "symbol": "wnxmusdt",
+    "baseCurrency": "wnxm",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dora": {
+    "symbol": "dorausdt",
+    "baseCurrency": "dora",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "arpa": {
+    "symbol": "arpausdt",
+    "baseCurrency": "arpa",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "xch": {
+    "symbol": "xchusdt",
+    "baseCurrency": "xch",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "kan": {
+    "symbol": "kanusdt",
+    "baseCurrency": "kan",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "pstake": {
+    "symbol": "pstakeusdt",
+    "baseCurrency": "pstake",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "boring": {
+    "symbol": "boringusdt",
+    "baseCurrency": "boring",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "starly": {
+    "symbol": "starlyusdt",
+    "baseCurrency": "starly",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 5
+  },
+  "bags": {
+    "symbol": "bagsusdt",
+    "baseCurrency": "bags",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "cudos": {
+    "symbol": "cudosusdt",
+    "baseCurrency": "cudos",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "rly": {
+    "symbol": "rlyusdt",
+    "baseCurrency": "rly",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "btc1s": {
+    "symbol": "btc1susdt",
+    "baseCurrency": "btc1s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "egld": {
+    "symbol": "egldusdt",
+    "baseCurrency": "egld",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ioi": {
+    "symbol": "ioiusdt",
+    "baseCurrency": "ioi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sps": {
+    "symbol": "spsusdt",
+    "baseCurrency": "sps",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "aca": {
+    "symbol": "acausdt",
+    "baseCurrency": "aca",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "link3l": {
+    "symbol": "link3lusdt",
+    "baseCurrency": "link3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "raca": {
+    "symbol": "racausdt",
+    "baseCurrency": "raca",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ceek": {
+    "symbol": "ceekusdt",
+    "baseCurrency": "ceek",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "req": {
+    "symbol": "requsdt",
+    "baseCurrency": "req",
+    "baseCurrencyDecimalPlaces": 1,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "eth3l": {
+    "symbol": "eth3lusdt",
+    "baseCurrency": "eth3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "lmr": {
+    "symbol": "lmrusdt",
+    "baseCurrency": "lmr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "vr": {
+    "symbol": "vrusdt",
+    "baseCurrency": "vr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "vpad": {
+    "symbol": "vpadusdt",
+    "baseCurrency": "vpad",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "jst": {
+    "symbol": "jstusdt",
+    "baseCurrency": "jst",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "uni2l": {
+    "symbol": "uni2lusdt",
+    "baseCurrency": "uni2l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "sos": {
+    "symbol": "sosusdt",
+    "baseCurrency": "sos",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "mgg": {
+    "symbol": "mggusdt",
+    "baseCurrency": "mgg",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mesa": {
+    "symbol": "mesausdt",
+    "baseCurrency": "mesa",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "cube": {
+    "symbol": "cubeusdt",
+    "baseCurrency": "cube",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "movez": {
+    "symbol": "movezusdt",
+    "baseCurrency": "movez",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "amp": {
+    "symbol": "ampusdt",
+    "baseCurrency": "amp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "reth": {
+    "symbol": "rethusdt",
+    "baseCurrency": "reth",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "cvx": {
+    "symbol": "cvxusdt",
+    "baseCurrency": "cvx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "toke": {
+    "symbol": "tokeusdt",
+    "baseCurrency": "toke",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "zec3l": {
+    "symbol": "zec3lusdt",
+    "baseCurrency": "zec3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "sns": {
+    "symbol": "snsusdt",
+    "baseCurrency": "sns",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "plato": {
+    "symbol": "platousdt",
+    "baseCurrency": "plato",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "klay": {
+    "symbol": "klayusdt",
+    "baseCurrency": "klay",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "primate": {
+    "symbol": "primateusdt",
+    "baseCurrency": "primate",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "nodl": {
+    "symbol": "nodlusdt",
+    "baseCurrency": "nodl",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "anv": {
+    "symbol": "anvusdt",
+    "baseCurrency": "anv",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "boba": {
+    "symbol": "bobausdt",
+    "baseCurrency": "boba",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "suku": {
+    "symbol": "sukuusdt",
+    "baseCurrency": "suku",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ats": {
+    "symbol": "atsusdt",
+    "baseCurrency": "ats",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "revv": {
+    "symbol": "revvusdt",
+    "baseCurrency": "revv",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ens": {
+    "symbol": "ensusdt",
+    "baseCurrency": "ens",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "tusd": {
+    "symbol": "tusdusdt",
+    "baseCurrency": "tusd",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "antex": {
+    "symbol": "antexusdt",
+    "baseCurrency": "antex",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "alice": {
+    "symbol": "aliceusdt",
+    "baseCurrency": "alice",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "efi": {
+    "symbol": "efiusdt",
+    "baseCurrency": "efi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "like": {
+    "symbol": "likeusdt",
+    "baseCurrency": "like",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "indi": {
+    "symbol": "indiusdt",
+    "baseCurrency": "indi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "boo": {
+    "symbol": "boousdt",
+    "baseCurrency": "boo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wemix": {
+    "symbol": "wemixusdt",
+    "baseCurrency": "wemix",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mkr": {
+    "symbol": "mkrusdt",
+    "baseCurrency": "mkr",
+    "baseCurrencyDecimalPlaces": 6,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "icp": {
+    "symbol": "icpusdt",
+    "baseCurrency": "icp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "nct": {
+    "symbol": "nctusdt",
+    "baseCurrency": "nct",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "gala": {
+    "symbol": "galausdt",
+    "baseCurrency": "gala",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "kt": {
+    "symbol": "ktusdt",
+    "baseCurrency": "kt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "fota": {
+    "symbol": "fotausdt",
+    "baseCurrency": "fota",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "lpt": {
+    "symbol": "lptusdt",
+    "baseCurrency": "lpt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "unic": {
+    "symbol": "unicusdt",
+    "baseCurrency": "unic",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mask": {
+    "symbol": "maskusdt",
+    "baseCurrency": "mask",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ctsi": {
+    "symbol": "ctsiusdt",
+    "baseCurrency": "ctsi",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "t": {
+    "symbol": "tusdt",
+    "baseCurrency": "t",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "aurora": {
+    "symbol": "aurorausdt",
+    "baseCurrency": "aurora",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "1sol": {
+    "symbol": "1solusdt",
+    "baseCurrency": "1sol",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "polyx": {
+    "symbol": "polyxusdt",
+    "baseCurrency": "polyx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "lqty": {
+    "symbol": "lqtyusdt",
+    "baseCurrency": "lqty",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "plu": {
+    "symbol": "pluusdt",
+    "baseCurrency": "plu",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "aioz": {
+    "symbol": "aiozusdt",
+    "baseCurrency": "aioz",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xtm": {
+    "symbol": "xtmusdt",
+    "baseCurrency": "xtm",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "arkn": {
+    "symbol": "arknusdt",
+    "baseCurrency": "arkn",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "war": {
+    "symbol": "warusdt",
+    "baseCurrency": "war",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "scrt": {
+    "symbol": "scrtusdt",
+    "baseCurrency": "scrt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wild": {
+    "symbol": "wildusdt",
+    "baseCurrency": "wild",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "prom": {
+    "symbol": "promusdt",
+    "baseCurrency": "prom",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "soc": {
+    "symbol": "socusdt",
+    "baseCurrency": "soc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "onston": {
+    "symbol": "onstonusdt",
+    "baseCurrency": "onston",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "fox": {
+    "symbol": "foxusdt",
+    "baseCurrency": "fox",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dodo": {
+    "symbol": "dodousdt",
+    "baseCurrency": "dodo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "tdx": {
+    "symbol": "tdxusdt",
+    "baseCurrency": "tdx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "op": {
+    "symbol": "opusdt",
+    "baseCurrency": "op",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mina": {
+    "symbol": "minausdt",
+    "baseCurrency": "mina",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "store": {
+    "symbol": "storeusdt",
+    "baseCurrency": "store",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "sis": {
+    "symbol": "sisusdt",
+    "baseCurrency": "sis",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gods": {
+    "symbol": "godsusdt",
+    "baseCurrency": "gods",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dexe": {
+    "symbol": "dexeusdt",
+    "baseCurrency": "dexe",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "noia": {
+    "symbol": "noiausdt",
+    "baseCurrency": "noia",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "lbl": {
+    "symbol": "lblusdt",
+    "baseCurrency": "lbl",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "xdc": {
+    "symbol": "xdcusdt",
+    "baseCurrency": "xdc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "link3s": {
+    "symbol": "link3susdt",
+    "baseCurrency": "link3s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "col": {
+    "symbol": "colusdt",
+    "baseCurrency": "col",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "jasmy": {
+    "symbol": "jasmyusdt",
+    "baseCurrency": "jasmy",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "wpci": {
+    "symbol": "wpciusdt",
+    "baseCurrency": "wpci",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mcg": {
+    "symbol": "mcgusdt",
+    "baseCurrency": "mcg",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "lunr": {
+    "symbol": "lunrusdt",
+    "baseCurrency": "lunr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "klv": {
+    "symbol": "klvusdt",
+    "baseCurrency": "klv",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "gari": {
+    "symbol": "gariusdt",
+    "baseCurrency": "gari",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mbox": {
+    "symbol": "mboxusdt",
+    "baseCurrency": "mbox",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gear": {
+    "symbol": "gearusdt",
+    "baseCurrency": "gear",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "route": {
+    "symbol": "routeusdt",
+    "baseCurrency": "route",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "vemp": {
+    "symbol": "vempusdt",
+    "baseCurrency": "vemp",
+    "baseCurrencyDecimalPlaces": 3,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 5
+  },
+  "cusd": {
+    "symbol": "cusdusdt",
+    "baseCurrency": "cusd",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "fio": {
+    "symbol": "fiousdt",
+    "baseCurrency": "fio",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "zed": {
+    "symbol": "zedusdt",
+    "baseCurrency": "zed",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "chsb": {
+    "symbol": "chsbusdt",
+    "baseCurrency": "chsb",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sdn": {
+    "symbol": "sdnusdt",
+    "baseCurrency": "sdn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "zbc": {
+    "symbol": "zbcusdt",
+    "baseCurrency": "zbc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "vision": {
+    "symbol": "visionusdt",
+    "baseCurrency": "vision",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "adp": {
+    "symbol": "adpusdt",
+    "baseCurrency": "adp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "uni2s": {
+    "symbol": "uni2susdt",
+    "baseCurrency": "uni2s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ldo": {
+    "symbol": "ldousdt",
+    "baseCurrency": "ldo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "pbr": {
+    "symbol": "pbrusdt",
+    "baseCurrency": "pbr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "vra": {
+    "symbol": "vrausdt",
+    "baseCurrency": "vra",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "tao": {
+    "symbol": "taousdt",
+    "baseCurrency": "tao",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gbp": {
+    "symbol": "gbpusdt",
+    "baseCurrency": "gbp",
+    "baseCurrencyDecimalPlaces": 1,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 3
+  },
+  "xeta": {
+    "symbol": "xetausdt",
+    "baseCurrency": "xeta",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "bwo": {
+    "symbol": "bwousdt",
+    "baseCurrency": "bwo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "bbf": {
+    "symbol": "bbfusdt",
+    "baseCurrency": "bbf",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "bico": {
+    "symbol": "bicousdt",
+    "baseCurrency": "bico",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "pyr": {
+    "symbol": "pyrusdt",
+    "baseCurrency": "pyr",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "mc": {
+    "symbol": "mcusdt",
+    "baseCurrency": "mc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "aqt": {
+    "symbol": "aqtusdt",
+    "baseCurrency": "aqt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "looks": {
+    "symbol": "looksusdt",
+    "baseCurrency": "looks",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ern": {
+    "symbol": "ernusdt",
+    "baseCurrency": "ern",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wlkn": {
+    "symbol": "wlknusdt",
+    "baseCurrency": "wlkn",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "bnb": {
+    "symbol": "bnbusdt",
+    "baseCurrency": "bnb",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 2
+  },
+  "voxel": {
+    "symbol": "voxelusdt",
+    "baseCurrency": "voxel",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "eth1s": {
+    "symbol": "eth1susdt",
+    "baseCurrency": "eth1s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gmee": {
+    "symbol": "gmeeusdt",
+    "baseCurrency": "gmee",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "pokt": {
+    "symbol": "poktusdt",
+    "baseCurrency": "pokt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ltc3s": {
+    "symbol": "ltc3susdt",
+    "baseCurrency": "ltc3s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "wwy": {
+    "symbol": "wwyusdt",
+    "baseCurrency": "wwy",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "xdefi": {
+    "symbol": "xdefiusdt",
+    "baseCurrency": "xdefi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "perp": {
+    "symbol": "perpusdt",
+    "baseCurrency": "perp",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "onit": {
+    "symbol": "onitusdt",
+    "baseCurrency": "onit",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "unb": {
+    "symbol": "unbusdt",
+    "baseCurrency": "unb",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "xyo": {
+    "symbol": "xyousdt",
+    "baseCurrency": "xyo",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "scream": {
+    "symbol": "screamusdt",
+    "baseCurrency": "scream",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ogv": {
+    "symbol": "ogvusdt",
+    "baseCurrency": "ogv",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "we": {
+    "symbol": "weusdt",
+    "baseCurrency": "we",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "kma": {
+    "symbol": "kmausdt",
+    "baseCurrency": "kma",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "wmt": {
+    "symbol": "wmtusdt",
+    "baseCurrency": "wmt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wallet": {
+    "symbol": "walletusdt",
+    "baseCurrency": "wallet",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "fil3s": {
+    "symbol": "fil3susdt",
+    "baseCurrency": "fil3s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "rei": {
+    "symbol": "reiusdt",
+    "baseCurrency": "rei",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "anc": {
+    "symbol": "ancusdt",
+    "baseCurrency": "anc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sku": {
+    "symbol": "skuusdt",
+    "baseCurrency": "sku",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "hec": {
+    "symbol": "hecusdt",
+    "baseCurrency": "hec",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "koi": {
+    "symbol": "koiusdt",
+    "baseCurrency": "koi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "spa": {
+    "symbol": "spausdt",
+    "baseCurrency": "spa",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "kct": {
+    "symbol": "kctusdt",
+    "baseCurrency": "kct",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "zec3s": {
+    "symbol": "zec3susdt",
+    "baseCurrency": "zec3s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "berry": {
+    "symbol": "berryusdt",
+    "baseCurrency": "berry",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "qom": {
+    "symbol": "qomusdt",
+    "baseCurrency": "qom",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "strm": {
+    "symbol": "strmusdt",
+    "baseCurrency": "strm",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sfund": {
+    "symbol": "sfundusdt",
+    "baseCurrency": "sfund",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "xcur": {
+    "symbol": "xcurusdt",
+    "baseCurrency": "xcur",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "btc3s": {
+    "symbol": "btc3susdt",
+    "baseCurrency": "btc3s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "mono": {
+    "symbol": "monousdt",
+    "baseCurrency": "mono",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "c98": {
+    "symbol": "c98usdt",
+    "baseCurrency": "c98",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "psg": {
+    "symbol": "psgusdt",
+    "baseCurrency": "psg",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ltc3l": {
+    "symbol": "ltc3lusdt",
+    "baseCurrency": "ltc3l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "upi": {
+    "symbol": "upiusdt",
+    "baseCurrency": "upi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "tinc": {
+    "symbol": "tincusdt",
+    "baseCurrency": "tinc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "sprt": {
+    "symbol": "sprtusdt",
+    "baseCurrency": "sprt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "love": {
+    "symbol": "loveusdt",
+    "baseCurrency": "love",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "vlx": {
+    "symbol": "vlxusdt",
+    "baseCurrency": "vlx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "lith": {
+    "symbol": "lithusdt",
+    "baseCurrency": "lith",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "eden": {
+    "symbol": "edenusdt",
+    "baseCurrency": "eden",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "gmt": {
+    "symbol": "gmtusdt",
+    "baseCurrency": "gmt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "spellfire": {
+    "symbol": "spellfireusdt",
+    "baseCurrency": "spellfire",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "abbc": {
+    "symbol": "abbcusdt",
+    "baseCurrency": "abbc",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "shit": {
+    "symbol": "shitusdt",
+    "baseCurrency": "shit",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "hunt": {
+    "symbol": "huntusdt",
+    "baseCurrency": "hunt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "super": {
+    "symbol": "superusdt",
+    "baseCurrency": "super",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "wozx": {
+    "symbol": "wozxusdt",
+    "baseCurrency": "wozx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "atm": {
+    "symbol": "atmusdt",
+    "baseCurrency": "atm",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "crts": {
+    "symbol": "crtsusdt",
+    "baseCurrency": "crts",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "dep": {
+    "symbol": "depusdt",
+    "baseCurrency": "dep",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "audio": {
+    "symbol": "audiousdt",
+    "baseCurrency": "audio",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "dog": {
+    "symbol": "dogusdt",
+    "baseCurrency": "dog",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "zig": {
+    "symbol": "zigusdt",
+    "baseCurrency": "zig",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "mudol2": {
+    "symbol": "mudol2usdt",
+    "baseCurrency": "mudol2",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "ctx": {
+    "symbol": "ctxusdt",
+    "baseCurrency": "ctx",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "eos3s": {
+    "symbol": "eos3susdt",
+    "baseCurrency": "eos3s",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "eur": {
+    "symbol": "eurusdt",
+    "baseCurrency": "eur",
+    "baseCurrencyDecimalPlaces": 1,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 3
+  },
+  "ertha": {
+    "symbol": "erthausdt",
+    "baseCurrency": "ertha",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "nt": {
+    "symbol": "ntusdt",
+    "baseCurrency": "nt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "juv": {
+    "symbol": "juvusdt",
+    "baseCurrency": "juv",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "unfi": {
+    "symbol": "unfiusdt",
+    "baseCurrency": "unfi",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "toms": {
+    "symbol": "tomsusdt",
+    "baseCurrency": "toms",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "dot2l": {
+    "symbol": "dot2lusdt",
+    "baseCurrency": "dot2l",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "usdt",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "usdt": {
+    "symbol": "usdthusd",
+    "baseCurrency": "usdt",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "husd",
+    "quoteCurrencyDecimalPlaces": 4
+  },
+  "btg": {
+    "symbol": "btgbtc",
+    "baseCurrency": "btg",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "ssp": {
+    "symbol": "sspbtc",
+    "baseCurrency": "ssp",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "pay": {
+    "symbol": "paybtc",
+    "baseCurrency": "pay",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "portal": {
+    "symbol": "portalbtc",
+    "baseCurrency": "portal",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "ncc": {
+    "symbol": "nccbtc",
+    "baseCurrency": "ncc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "18c": {
+    "symbol": "18cbtc",
+    "baseCurrency": "18c",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "aidoc": {
+    "symbol": "aidocbtc",
+    "baseCurrency": "aidoc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "cnn": {
+    "symbol": "cnnbtc",
+    "baseCurrency": "cnn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "ncash": {
+    "symbol": "ncashbtc",
+    "baseCurrency": "ncash",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "dgb": {
+    "symbol": "dgbbtc",
+    "baseCurrency": "dgb",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "snc": {
+    "symbol": "sncbtc",
+    "baseCurrency": "snc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "cova": {
+    "symbol": "covabtc",
+    "baseCurrency": "cova",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "bkbt": {
+    "symbol": "bkbtbtc",
+    "baseCurrency": "bkbt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "xvg": {
+    "symbol": "xvgbtc",
+    "baseCurrency": "xvg",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "pnt": {
+    "symbol": "pntbtc",
+    "baseCurrency": "pnt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "lym": {
+    "symbol": "lymbtc",
+    "baseCurrency": "lym",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "datx": {
+    "symbol": "datxbtc",
+    "baseCurrency": "datx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "trio": {
+    "symbol": "triobtc",
+    "baseCurrency": "trio",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "idt": {
+    "symbol": "idtbtc",
+    "baseCurrency": "idt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "tos": {
+    "symbol": "tosbtc",
+    "baseCurrency": "tos",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "rccc": {
+    "symbol": "rcccbtc",
+    "baseCurrency": "rccc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "chat": {
+    "symbol": "chatbtc",
+    "baseCurrency": "chat",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "rcn": {
+    "symbol": "rcnbtc",
+    "baseCurrency": "rcn",
+    "baseCurrencyDecimalPlaces": 0,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "propy": {
+    "symbol": "propybtc",
+    "baseCurrency": "propy",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "etn": {
+    "symbol": "etnbtc",
+    "baseCurrency": "etn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "man": {
+    "symbol": "manbtc",
+    "baseCurrency": "man",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "bcv": {
+    "symbol": "bcvbtc",
+    "baseCurrency": "bcv",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "kmd": {
+    "symbol": "kmdbtc",
+    "baseCurrency": "kmd",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "topc": {
+    "symbol": "topcbtc",
+    "baseCurrency": "topc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "qsp": {
+    "symbol": "qspbtc",
+    "baseCurrency": "qsp",
+    "baseCurrencyDecimalPlaces": 0,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "meet": {
+    "symbol": "meetbtc",
+    "baseCurrency": "meet",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "ardr": {
+    "symbol": "ardrbtc",
+    "baseCurrency": "ardr",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "egcc": {
+    "symbol": "egccbtc",
+    "baseCurrency": "egcc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "mtn": {
+    "symbol": "mtnbtc",
+    "baseCurrency": "mtn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "iic": {
+    "symbol": "iicbtc",
+    "baseCurrency": "iic",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "bcd": {
+    "symbol": "bcdbtc",
+    "baseCurrency": "bcd",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 9
+  },
+  "bft": {
+    "symbol": "bftbtc",
+    "baseCurrency": "bft",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "lsk": {
+    "symbol": "lskbtc",
+    "baseCurrency": "lsk",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "mtx": {
+    "symbol": "mtxbtc",
+    "baseCurrency": "mtx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "qash": {
+    "symbol": "qashbtc",
+    "baseCurrency": "qash",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "wan": {
+    "symbol": "wanbtc",
+    "baseCurrency": "wan",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "mex": {
+    "symbol": "mexbtc",
+    "baseCurrency": "mex",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "fair": {
+    "symbol": "fairbtc",
+    "baseCurrency": "fair",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "mt": {
+    "symbol": "mtbtc",
+    "baseCurrency": "mt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "ugas": {
+    "symbol": "ugasbtc",
+    "baseCurrency": "ugas",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "srn": {
+    "symbol": "srnbtc",
+    "baseCurrency": "srn",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "musk": {
+    "symbol": "muskbtc",
+    "baseCurrency": "musk",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "powr": {
+    "symbol": "powrbtc",
+    "baseCurrency": "powr",
+    "baseCurrencyDecimalPlaces": 0,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "grs": {
+    "symbol": "grsbtc",
+    "baseCurrency": "grs",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "gas": {
+    "symbol": "gasbtc",
+    "baseCurrency": "gas",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 6
+  },
+  "gsc": {
+    "symbol": "gscbtc",
+    "baseCurrency": "gsc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "cvnx": {
+    "symbol": "cvnxbtc",
+    "baseCurrency": "cvnx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "uc": {
+    "symbol": "ucbtc",
+    "baseCurrency": "uc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 14
+  },
+  "eko": {
+    "symbol": "ekobtc",
+    "baseCurrency": "eko",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "cvnt": {
+    "symbol": "cvntbtc",
+    "baseCurrency": "cvnt",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 8
+  },
+  "ycc": {
+    "symbol": "yccbtc",
+    "baseCurrency": "ycc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "get": {
+    "symbol": "getbtc",
+    "baseCurrency": "get",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "phx": {
+    "symbol": "phxbtc",
+    "baseCurrency": "phx",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "gtc": {
+    "symbol": "gtcbtc",
+    "baseCurrency": "gtc",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "but": {
+    "symbol": "butbtc",
+    "baseCurrency": "but",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "she": {
+    "symbol": "shebtc",
+    "baseCurrency": "she",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 12
+  },
+  "monfter": {
+    "symbol": "monfterbtc",
+    "baseCurrency": "monfter",
+    "baseCurrencyDecimalPlaces": 2,
+    "quoteCurrency": "btc",
+    "quoteCurrencyDecimalPlaces": 10
+  },
+  "dgd": {
+    "symbol": "dgdeth",
+    "baseCurrency": "dgd",
+    "baseCurrencyDecimalPlaces": 4,
+    "quoteCurrency": "eth",
+    "quoteCurrencyDecimalPlaces": 6
+  }
+}
