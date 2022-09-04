@@ -264,7 +264,7 @@ const processData = (Data: HuobiWebSocketResponse) => {
                         }
 
                         tradingPair = HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency]
-                        if (tradingPair.notificationStrikeCount > 1) buySignalStrikeNotification(symbol.toUpperCase(), Data.tick.lastPrice, tradingPair.notificationStrikeCount, Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT), quoteCurrency)
+                        if (tradingPair.notificationStrikeCount > 1) buySignalStrikeNotification(symbol.toUpperCase(), Data.tick.lastPrice, tradingPair.notificationStrikeCount, Number(process.env.HUOBI_NOTIFICATIONS_STRIKE_UNIT_PERCENT), quoteCurrency.toUpperCase())
 
                         if (tradingPair.notificationStrikeTimeoutId) clearTimeout(tradingPair.notificationStrikeTimeoutId)
                         HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency].notificationStrikeTimeoutId = setTimeout(
