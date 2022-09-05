@@ -201,6 +201,10 @@ const processTradingPairs = (newSubscribeSymbols ?: HuobiTelegramSymbols, unsubs
     })
 }
 
+const getBaseAssetName = (tradingPair: string) => {
+    const regExp: RegExp = new RegExp(`^(\\w+)(` + process.env.HUOBI_QUOTE_ASSETS.replace(/,/g,"|") + `)$`)
+    return tradingPair.toUpperCase().replace(regExp, '$1').toLowerCase()
+}
 const getSymbolFromTopic = (topic: string) => {
     return topic.replace(new RegExp('^(market\\.)(\\w+)(\\.ticker)'), "$2")
 }
@@ -241,7 +245,7 @@ const processData = (Data: HuobiWebSocketResponse) => {
             }
             if (Data.tick) {
                 symbol = getSymbolFromTopic(Data.ch)
-                let tradingPair: HuobiTelegramTradingPairs[""] = (Object.entries(HUOBI_TELEGRAM_TRADING_PAIRS).filter(([_, v]) => v.symbol === symbol)[0] ?? [])[1]
+                let tradingPair: HuobiTelegramTradingPairs[""] = HUOBI_TELEGRAM_TRADING_PAIRS[getBaseAssetName(symbol)]
                 if (tradingPair) {
                     const {baseCurrency, quoteCurrency} = tradingPair
                     // Notifications service
