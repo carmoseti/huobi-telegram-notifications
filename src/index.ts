@@ -63,10 +63,10 @@ const getSymbols = () => {
                     // Subsequent (Post-startup)
                     else {
                         const newHuobiSymbols: HuobiTelegramSymbols = {}
-
                         for (let a = 0; a < response.data.data.length; a++) {
                             const tradePair = response.data.data[a]
                             const baseCurrency = tradePair["base-currency"]
+                            const quoteCurrency = tradePair["quote-currency"]
                             if (!HUOBI_TELEGRAM_SYMBOLS[baseCurrency]) {
                                 // New
                                 if (newHuobiSymbols[baseCurrency]) {
@@ -76,6 +76,13 @@ const getSymbols = () => {
                                     }
                                 } else {
                                     newHuobiSymbols[baseCurrency] = {
+                                        [tradePair["quote-currency"]]: tradePair
+                                    }
+                                }
+                            } else {
+                                if (!HUOBI_TELEGRAM_SYMBOLS[baseCurrency][quoteCurrency]) {
+                                    newHuobiSymbols[baseCurrency] = {
+                                        ...HUOBI_TELEGRAM_SYMBOLS[baseCurrency],
                                         [tradePair["quote-currency"]]: tradePair
                                     }
                                 }
@@ -174,10 +181,12 @@ const processTradingPairs = (newSubscribeSymbols ?: HuobiTelegramSymbols, unsubs
                 for (let a = 0; a < unsubscribeSymbolsEntries.length; a++) {
                     const [baseCurrency] = unsubscribeSymbolsEntries[a]
                     const tradePair: HuobiTelegramTradingPairs[""] = HUOBI_TELEGRAM_TRADING_PAIRS[baseCurrency]
-                    HUOBI_MAIN_WEBSOCKET.send(JSON.stringify({
-                        unsub: `market.${tradePair.symbol}.ticker`,
-                        id: String(new Date().getTime()),
-                    }))
+                    if (tradePair) {
+                        HUOBI_MAIN_WEBSOCKET.send(JSON.stringify({
+                            unsub: `market.${tradePair.symbol}.ticker`,
+                            id: String(new Date().getTime()),
+                        }))
+                    }
                 }
             }
 
@@ -202,7 +211,7 @@ const processTradingPairs = (newSubscribeSymbols ?: HuobiTelegramSymbols, unsubs
 }
 
 const getBaseAssetName = (tradingPair: string) => {
-    const regExp: RegExp = new RegExp(`^(\\w+)(` + process.env.HUOBI_QUOTE_ASSETS.replace(/,/g,"|") + `)$`)
+    const regExp: RegExp = new RegExp(`^(\\w+)(` + process.env.HUOBI_QUOTE_ASSETS.replace(/,/g, "|") + `)$`)
     return tradingPair.toUpperCase().replace(regExp, '$1').toLowerCase()
 }
 const getSymbolFromTopic = (topic: string) => {
